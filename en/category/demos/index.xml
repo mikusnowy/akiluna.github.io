@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demos on shelter</title>
+    <link>https://gageluna.com/en/category/demos/</link>
+    <description>Recent content in Demos on shelter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="https://gageluna.com/en/category/demos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Header Image</title>
+      <link>https://gageluna.com/en/2018/03/05/header-image/</link>
+      <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://gageluna.com/en/2018/03/05/header-image/</guid>
+      <description>This is a simple note.</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes Preview</title>
+      <link>https://gageluna.com/en/2018/03/04/shortcodes-preview/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://gageluna.com/en/2018/03/04/shortcodes-preview/</guid>
+      <description>Twiiter Google Map Figure   Globe    Highlight for Shells # test echo test # just a test echo hello world </description>
+    </item>
+    
+  </channel>
+</rss>
