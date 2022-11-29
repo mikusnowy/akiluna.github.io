@@ -18,15 +18,12 @@
       
       <guid>https://gageluna.com/zh-tw/about/</guid>
       
-        <description>&lt;p&gt;Hugo 是個靜態網頁產生器。&lt;/p&gt;
-&lt;p&gt;它利用了一些開放原始碼的專案像是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;了解並貢獻： &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;本博客主要是记录博主的一些日常所思所想
+也可以说
+是在这个审查大环境下
+保留一些独立思考的地方&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;无论你是因为何种原因点进来，我都欢迎
+希望我的一些思考，可以给你一些新的灵感&lt;/p&gt;
 </description>
       
     </item>
