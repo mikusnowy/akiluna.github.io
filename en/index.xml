@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
   <channel>
-    <title>Ananke: a Hugo Theme on shelter</title>
+    <title>shelter</title>
     <link>https://gageluna.com/en/</link>
-    <description>Recent content in Ananke: a Hugo Theme on shelter</description>
+    <description>Recent content on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Nov 2022 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2022 16:01:23 +0800</lastBuildDate>
     
     <atom:link href="https://gageluna.com/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>關於</title>
+      <link>https://gageluna.com/en/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://gageluna.com/en/about/</guid>
+      
+        <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;本博客主要是记录博主的一些日常所思所想
+也可以说
+是在这个审查大环境下
+保留一些独立思考的地方&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;无论你是因为何种原因点进来，我都欢迎
+希望我的一些思考，可以给你一些新的灵感&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>作为使用者，聊聊ios 和android</title>
+      <link>https://gageluna.com/en/2022/11/29/%E4%BD%9C%E4%B8%BA%E4%BD%BF%E7%94%A8%E8%80%85%E8%81%8A%E8%81%8Aios-%E5%92%8Candroid/</link>
+      <pubDate>Tue, 29 Nov 2022 16:01:23 +0800</pubDate>
+      
+      <guid>https://gageluna.com/en/2022/11/29/%E4%BD%9C%E4%B8%BA%E4%BD%BF%E7%94%A8%E8%80%85%E8%81%8A%E8%81%8Aios-%E5%92%8Candroid/</guid>
+      
+        <description>&lt;p&gt;&lt;strong&gt;最近，趁着双十一的活动，入手了iPhone，这下真的进入全面的IOS生态了。从Mac到iPad再到AirPods和iPhone，大部分的电子设备已经换成了iOS系统。本文就简单聊聊作为一个重度安卓用户迁移到IOS的一些感受。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-系统的封闭性&#34;&gt;1. 系统的封闭性&lt;/h2&gt;
+&lt;p&gt;这里不得不提的就是微信。在全面迁移到IOS之前，其实我还是做了一些功课，对于封闭的系统、昂贵的app都有所认知，但没想到，对我来讲影响最大的是微信。&lt;/p&gt;
+&lt;p&gt;作为一个安卓用户，微信是支持双开的。也就是说，微信支持安卓手机同时登录两个微信号的。我之前其实并没有太过于在意这个问题，或许确实是习惯了，所以我工作微信号是和我生活的微信号分开的。（并没有什么特别的理由，只是我司HR把之前的微信号拉到了微信群里，就把那个号作为工作号了）&lt;/p&gt;
+&lt;p&gt;换到了iOS的环境，微信并没有给iOS做微信双开的授权以及配置，导致同一时间我只能登录一个微信号。加上微信电脑的登录只要一切换账号就会掉线，在初期的一段时间我其实是比较难受的（现在也没什么好的解决方法）&lt;/p&gt;
+&lt;p&gt;除此之外，我还是一个Google play的用户，相较于安卓机的应用市场里app都会带着各种各样的华丽广告，我更倾向于选择简洁的小体积，很多小巧灵活的应用我都是从google play里面搜索得到。&lt;/p&gt;
+&lt;p&gt;在这里我就怀念起我的via浏览器，不到1M的内存，不会带各种花里胡哨的功能，但是扩展功能极强。相较之下，IOS自带的Safari浏览器真的有一种用起来一言难尽的感觉。作为一款浏览器，它无疑是合格的，但对我来说，可配置的扩展有些少，可玩性较低。&lt;/p&gt;
+&lt;p&gt;其他常见的应用，我还是从各个区的app store找了相应的平替，不得不说，app store需要来回切换账号真的很繁琐，而且各个区相同app价格不同很难受。不过这也是iOS封闭性的一种体现。&lt;/p&gt;
+&lt;h2 id=&#34;2应用权限的清晰&#34;&gt;2.应用权限的清晰&lt;/h2&gt;
+&lt;p&gt;这确实是IOS比安卓强的一点，或者说，更加繁琐的地方。iOS的应用很多都在申请权限时候会有询问，而且可以从后台很明显的看出来到底是哪个应用在使用什么权限。&lt;/p&gt;
+&lt;p&gt;我相信安卓也有对应的设置，但是安卓的应用在使用权限（比如定位、录音），并不会有明显标识。我觉得这一点对于用户的信息安全是一种很好的保护。并不是我对我去过哪里说过什么处于保密状态，但是我要App在调用这些数据的时候给出很好的理由，至少别用我的数据去训练算法模型。&lt;/p&gt;
+&lt;p&gt;不过这样也有明显的问题——输入法。如果不选择iOS自带的输入法，其他的输入法在每次复制粘贴时候都需要确认权限，而且可供IOS选择的输入法比较稀少，这一点确实是iOS系统的减分项。&lt;/p&gt;
+&lt;h2 id=&#34;3ios生态的完整性&#34;&gt;3.IOS生态的完整性&lt;/h2&gt;
+&lt;p&gt;我觉得这是IOS最出彩的一点了。&lt;/p&gt;
+&lt;p&gt;作为安卓用户，不可避免的就是各种各样的适配性问题，但同时，并没有哪家安卓公司的产品可以样样都十分出彩。某米家的手机、某为家的平板，再配上其他厂家的蓝牙耳机，以及不知名厂家的电脑。在种种的相互匹配中，难免会出现因为其中一个升级导致交互性出现问题。&lt;/p&gt;
+&lt;p&gt;对于iOS来说，平板、电脑、耳机、手机，都做的很出色。只能说最大的问题就是它的价格也同样昂贵了。在整体的iOS生态中，airdrop的互相传输、iCloud的备份、以及AirPods的多设备无延迟切换，真的带给人无可比拟的新奇体验。&lt;/p&gt;
+&lt;p&gt;这其中，AirPods的无缝切换是最令我满意的。之前在安卓环境中，已经被渐渐养成了一个蓝牙耳机只能连接一台设备，如果想要切换，还需要重新放到盒中长按复位键，清除匹配，新设备再匹配。不得不说，这种操作真的很繁琐，尤其是在用电脑干一件事时突然需要用手机去干另一件事。在iOS系统中，多设备无缝切换，真的是十分便利。&lt;/p&gt;
+&lt;p&gt;另外，airdrop真的解决了困扰我很久的电脑和手机同步的问题。之前总是需要各种第三方平台作为中转，加上微信、QQ还要对传输文件有各种各样的限制。但是airdrop的直接传输，真的便利。&lt;/p&gt;
+&lt;h2 id=&#34;4规范的快捷方式快捷指令&#34;&gt;4.规范的快捷方式——快捷指令&lt;/h2&gt;
+&lt;p&gt;iOS在封闭的系统之中，也同样提供了方便快捷的方式。通过快捷方式，可以实现多个app的联动以及一些自动化的功能——比如查询日历自动开启上班闹钟/休息闹钟。&lt;/p&gt;
+&lt;p&gt;不过我研究发现，快捷指令本身也是有着一定的入门门槛。虽然网上有着很多的捷径库，但是否与IOS 当前版本匹配，以及一些相应的配置，也会让很多人望而却步。&lt;/p&gt;
+&lt;p&gt;究其根本，是iOS给用户开放的一套脚本系统，主要通过函数和各种判断条件，实现快捷完成目标，有一些类似于GitHub中的CI自动化。我并没有仔细研究这一块，不过目前发现很多功能确实很好用。&lt;/p&gt;
+&lt;h2 id=&#34;综上就是我对于ios的一些初步的体验感想&#34;&gt;综上，就是我对于iOS的一些初步的体验感想。&lt;/h2&gt;
+&lt;p&gt;我很难说iOS能完全领先于android，在使用过程中，它也同样有着很多的毛病。加上IOS设备普遍偏贵，相较于国产低廉的android设备，IOS还是性价比较低的。但是，如果是追求一个新的体验以及无广告的环境，还是可以尝试一下IOS的生态的。&lt;/p&gt;
+&lt;p&gt;***PS. 因为iOS几乎无广告，总有老年人应该用iOS的说法。这一点上，我觉得还是有待考虑，毕竟，相对于几乎完全开放的安卓系统，IOS的多账号、iCloud同步，以及自动订阅收费这些设置还是需要安卓用户适应。&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>节日的意义</title>
@@ -68,43 +121,6 @@
       <guid>https://gageluna.com/en/2018/03/03/%E7%AD%86%E8%A8%98-1/</guid>
       
         <description>&lt;p&gt;欢迎来到GaGe 的博客&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://gageluna.com/en/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/about/</guid>
-      
-        <description>
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://gageluna.com/css/hugo-easy-gallery.css&#34; /&gt;
-&lt;div class=&#34;box&#34;&gt;
-  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-    &lt;div class=&#34;img&#34;&gt;
-      &lt;img  itemprop=&#34;thumbnail&#34; src=&#34;https://gageluna.com/images/Victor_Hugo-Hunchback.jpg&#34;  /&gt;
-    &lt;/div&gt;
-    
-      &lt;figcaption&gt;&lt;h4&gt;Illustration from Victor Hugo et son temps (1881)&lt;/h4&gt;
-      &lt;/figcaption&gt;
-  &lt;/figure&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;The Hunchback of Notre-Dame&lt;/em&gt; (French: &lt;em&gt;Notre-Dame de Paris&lt;/em&gt;) is a French Romantic/Gothic novel by Victor Hugo, published in 1831. The original French title refers to Notre Dame Cathedral, on which the story is centered. English translator Frederic Shoberl named the novel The Hunchback of Notre Dame in 1833 because at the time, Gothic novels were more popular than Romance novels in England. The story is set in Paris, France in the Late Middle Ages, during the reign of Louis XI.&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://gageluna.com/en/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/contact/</guid>
-      
-        <description>&lt;p&gt;This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out &lt;a href=&#34;https://formspree.io/&#34;&gt;Formspree&lt;/a&gt; for a simple, free form service.&lt;/p&gt;
 </description>
       
     </item>

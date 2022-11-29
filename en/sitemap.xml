@@ -2,43 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gageluna.com/en/</loc>
-    <lastmod>2022-11-27T16:01:23+08:00</lastmod>
+    <loc>https://gageluna.com/en/about/</loc>
+    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/categories/</loc>
-    <lastmod>2022-11-27T16:01:23+08:00</lastmod>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/category/notes/</loc>
-    <lastmod>2022-11-27T16:01:23+08:00</lastmod>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/tag/notes/</loc>
-    <lastmod>2022-11-27T16:01:23+08:00</lastmod>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/posts/</loc>
-    <lastmod>2022-11-27T16:01:23+08:00</lastmod>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/en/</loc>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/tags/</loc>
-    <lastmod>2022-11-27T16:01:23+08:00</lastmod>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/en/2022/11/29/%E4%BD%9C%E4%B8%BA%E4%BD%BF%E7%94%A8%E8%80%85%E8%81%8A%E8%81%8Aios-%E5%92%8Candroid/</loc>
+    <lastmod>2022-11-29T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -81,18 +95,6 @@
   <url>
     <loc>https://gageluna.com/en/2018/03/03/%E7%AD%86%E8%A8%98-1/</loc>
     <lastmod>2018-03-03T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/en/about/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/en/contact/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
