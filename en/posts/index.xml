@@ -26,30 +26,21 @@
     </item>
     
     <item>
+      <title>测试项目</title>
+      <link>https://gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Fri, 25 Nov 2022 16:01:23 +0800</pubDate>
+      
+      <guid>https://gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE/</guid>
+      <description>总归还是需要留个文件在这里作为备用的 该文章只是用来测试</description>
+    </item>
+    
+    <item>
       <title>標頭圖片</title>
       <link>https://gageluna.com/en/2018/03/05/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</link>
       <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://gageluna.com/en/2018/03/05/%E6%A8%99%E9%A0%AD%E5%9C%96%E7%89%87/</guid>
       <description>這是一個簡單的筆記。</description>
-    </item>
-    
-    <item>
-      <title>筆記 2</title>
-      <link>https://gageluna.com/en/2018/03/04/%E7%AD%86%E8%A8%98-2/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://gageluna.com/en/2018/03/04/%E7%AD%86%E8%A8%98-2/</guid>
-      <description>這是一個簡單的筆記。也许吧。</description>
-    </item>
-    
-    <item>
-      <title>筆記 1</title>
-      <link>https://gageluna.com/en/2018/03/03/%E7%AD%86%E8%A8%98-1/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://gageluna.com/en/2018/03/03/%E7%AD%86%E8%A8%98-1/</guid>
-      <description>欢迎来到GaGe 的博客 test</description>
     </item>
     
   </channel>
