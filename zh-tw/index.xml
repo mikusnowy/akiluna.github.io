@@ -62,7 +62,8 @@
       <guid>https://gageluna.com/zh-tw/2022/12/04/vcs%E5%91%BD%E4%BB%A4/</guid>
       
         <description>&lt;h2 id=&#34;常用编译选项&#34;&gt;常用编译选项&lt;/h2&gt;
-&lt;p&gt;[[增量编译 incremental complation]]
+&lt;p&gt;&lt;a href=&#34;obsidian://open?vault=obsidian-metadata&amp;amp;file=VCS%2Foption%2F%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%BB%E5%8A%A1%20sdf_annotate&#34;&gt;增量编译&lt;/a&gt;
+[优化编译](优化编译 Xkeyopt)
 [[优化编译 Xkeyopt]]
 [[寄存器初始化 initreg]]
 [[-v 和 -y（design cell 和 library cell）]]
@@ -124,6 +125,25 @@ from the KDB library paths.&lt;/p&gt;
 Specifies the path of the library directory when you want to
 i    invoke Verdi from a working directory that is different from the
 VCS working directory.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>优化编译</title>
+      <link>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</guid>
+      
+        <description>&lt;h3 id=&#34;-xkeyoptrtopt---xkeyopttbopt&#34;&gt;**-Xkeyopt=rtopt / -Xkeyopt=tbopt&lt;/h3&gt;
+&lt;p&gt;可以增强vcs 编译优化&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;原文：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option.
+Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option.
+The optimization applies to UVM factory, resource pool and regular expression operations.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
       
@@ -411,34 +431,6 @@ that you specified in a timing check.&lt;/p&gt;
 vcs +csdf+precomp+file+test1.sdf&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;***此外，该编译选项有option可以选择存放位置，以及编译后是否删除原sdf文件&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gageluna.com/zh-tw/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
-      
-        <description>&lt;p&gt;由于RTL阶段对时序呈现
-在网表仿真时，会出现x态。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;电源端口是否存在force 信号，VDD/VSS是否赋值。
-模型有带power pin和不带之分，需要和综合的人去沟通，看具体使用哪种仿真模型
-&lt;strong&gt;注意IP中的那些phy，主要是它们带了power pin&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;寄存器初始化
-可以参考 [[寄存器初始化 initreg]] ，可以有效解决部分寄存器在初始化时候没有赋值，导致X态传输问题。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;顶层端口例化过程
-在有些时候，顶层端口并没有被完全使用，需要注意剩下的端口是否悬空输入x态，导致X态传播&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 </description>
       
     </item>

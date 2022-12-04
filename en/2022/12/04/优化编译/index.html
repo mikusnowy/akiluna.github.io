@@ -3,13 +3,14 @@
 <head>
   <meta name="generator" content="Hugo 0.96.0" />
   <meta charset="utf-8">
-  <title>Tags · shelter</title>
+  <title>优化编译 · shelter</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A simple theme for Hugo" />
+  <meta name="description" content="**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations." />
+
   <meta name="keywords" content="Hugo, theme, den" />
 
-<link rel="canonical" href="https://gageluna.com/en/tags/" />
-<link rel="alternate" href="https://gageluna.com/zh-tw/tags/" hreflang="zh-tw">
+<link rel="canonical" href="https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/" />
+<link rel="alternate" href="https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/" hreflang="zh-tw">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -17,18 +18,21 @@
 
 
 
-<link href="/en/tags/index.xml" rel="alternate" type="application/rss+xml" title="shelter" />
 
+<meta property="og:title" content="优化编译" />
+<meta property="og:description" content="**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-04T00:00:00+00:00" />
 
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="A simple theme for Hugo" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gageluna.com/en/tags/" />
-
-<meta itemprop="name" content="Tags">
-<meta itemprop="description" content="A simple theme for Hugo"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="A simple theme for Hugo"/>
+<meta itemprop="name" content="优化编译">
+<meta itemprop="description" content="**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations."><meta itemprop="datePublished" content="2022-12-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-12-04T00:00:00+00:00" />
+<meta itemprop="wordCount" content="58">
+<meta itemprop="keywords" content="knowledge," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="优化编译"/>
+<meta name="twitter:description" content="**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations."/>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -105,13 +109,31 @@ if (!doNotTrack) {
   <div class="row">
     <div class="col-lg-12">
       <div class="header-content">
-        <h1 class="header-title text-uppercase">
-          Tags
-        </h1>
-        <div class="header-underline"></div>
-        <p class="header-subtitle header-subtitle-homepage">
-          List of Tags
+        <h1 class="header-title">优化编译</h1>
+        <p class="header-date">By
+          GaGe /
+        
+        2022-12-04
+          / In categories
+          <a href="https://gageluna.com/en/category/knowledge/">knowledge</a>
         </p>
+        
+        <div class="header-underline"></div>
+        
+          <div class="clearfix"></div>
+          <p class="float-right header-tags">
+              <i class="fas fa-tags" aria-hidden="true"></i>
+              <a href="https://gageluna.com/en/tag/knowledge/">knowledge</a>
+          </p>
+        
+        <div class="clearfix"></div>
+<p class="float-right translations">
+    <i class="fas fa-language" aria-hidden="true"></i>
+    Translations: 
+    <a href="https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/">ZH-TW</a>
+</p>
+
+
       </div>
     </div>
   </div>
@@ -119,47 +141,60 @@ if (!doNotTrack) {
 
   </div>
   <main>
+<div class="container content">
+  <article>
+  <h3 id="-xkeyoptrtopt---xkeyopttbopt">**-Xkeyopt=rtopt / -Xkeyopt=tbopt</h3>
+<p>可以增强vcs 编译优化</p>
+<p><em><strong>原文：</strong></em></p>
+<blockquote>
+<p>Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option.
+Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option.
+The optimization applies to UVM factory, resource pool and regular expression operations.</p>
+</blockquote>
 
+  </article>
 
-<div class="archive-container">
-    <div class="container content archive">
+  
+  
     
-      <h2><a href="https://gageluna.com/en/tags/">List of Tags</a></h2>
-      <dl class="row">
-      
-        
-        
-        
-            <dt class="col-md-3"><span class="badge badge-secondary">1</span> article tagged</dt>
-            <dd class="col-md-9"><a href="https://gageluna.com/en/tag/images/">images</a></dd>
-        
-      
-        
-        
-        
-            <dt class="col-md-3"><span class="badge badge-secondary">13</span> articles tagged</dt>
-            <dd class="col-md-9"><a href="https://gageluna.com/en/tag/knowledge/">knowledge</a></dd>
-        
-      
-        
-        
-        
-            <dt class="col-md-3"><span class="badge badge-secondary">1</span> article tagged</dt>
-            <dd class="col-md-9"><a href="https://gageluna.com/en/tag/note/">note</a></dd>
-        
-      
-        
-        
-        
-            <dt class="col-md-3"><span class="badge badge-secondary">3</span> articles tagged</dt>
-            <dd class="col-md-9"><a href="https://gageluna.com/en/tag/notes/">notes</a></dd>
-        
-      
-      </dl>
     
-    </div>
+    
+  
+  
+<div class="disqus-comment">
+<div>
+<div class="comment-underline"></div>
+</div>
+<div class="btn btn-secondary disqus-button" id="load_disqus" onclick="load_disqus()">
+  Load Disqus Comments
+</div>
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/";
+  };
+  function load_disqus() {
+    
+    
+    if (window.location.hostname === 'localhost') return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'gage';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.setAttribute('data-timestamp', +new Date());
+    (document.head || document.body).appendChild(dsq);
+
+    $('#load_disqus').remove();
+  };
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
 </div>
 
+
+</div>
 
   </main><div class="footer gradient-2">
   <div class="container footer-container ">

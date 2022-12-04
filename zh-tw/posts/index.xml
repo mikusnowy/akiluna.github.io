@@ -31,7 +31,7 @@
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://gageluna.com/zh-tw/2022/12/04/vcs%E5%91%BD%E4%BB%A4/</guid>
-      <description>常用编译选项 [[增量编译 incremental complation]] [[优化编译 Xkeyopt]] [[寄存器初始化 initreg]] [[-v 和 -y（design cell 和 library cell）]] [[sdf编译]] [[时序检查]] 遇见</description>
+      <description>常用编译选项 增量编译 [优化编译](优化编译 Xkeyopt) [[优化编译 Xkeyopt]] [[寄存器初始化 initreg]] [[-v 和 -y（design cell 和 library cell）]] [[sdf编译]] [[</description>
     </item>
     
     <item>
@@ -59,6 +59,15 @@
       
       <guid>https://gageluna.com/zh-tw/2022/12/04/verdi%E8%AF%BB%E5%8F%96%E7%BC%96%E8%BE%91%E5%BA%93/</guid>
       <description>verdi -simflow -dbdir &amp;lt;path&amp;gt; -top &amp;lt;top_name&amp;gt; &amp;lt;other_verdi_options&amp;gt; 说明: -simflow Enables Verdi and its utilities to use the library mapping from the synopsys_sim.setup file and also import the design from the KDB library paths. -dbdir &amp;lt;path&amp;gt; Specifies the path of the library directory when you want to i invoke Verdi from a working directory that is different from the VCS working directory.</description>
+    </item>
+    
+    <item>
+      <title>优化编译</title>
+      <link>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</guid>
+      <description>**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations.</description>
     </item>
     
     <item>
@@ -176,15 +185,6 @@
       
       <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
       <description>由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gageluna.com/zh-tw/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
-      <description>在编译时候使用 -deraceclockdata 。 ***该选项未经过实际验证，只是ug上面有写该功能</description>
     </item>
     
   </channel>
