@@ -29,292 +29,53 @@
     </item>
     
     <item>
-      <title>-v 和 -y（design cell 和 library cell）</title>
-      <link>https://gageluna.com/en/2022/12/04/-v-%E5%92%8C-ydesign-cell-%E5%92%8C-library-cell/</link>
+      <title>认知的壁垒</title>
+      <link>https://gageluna.com/en/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://gageluna.com/en/2022/12/04/-v-%E5%92%8C-ydesign-cell-%E5%92%8C-library-cell/</guid>
+      <guid>https://gageluna.com/en/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</guid>
       
-        <description>&lt;p&gt;-v/-y后面的文件会被vcs识别成library cell。&lt;/p&gt;
-&lt;p&gt;design cell 的优先级比 library cell优先级高，当例化时，同名design cell和library cell，VCS会优先使用design cell&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>sdf编译</title>
-      <link>https://gageluna.com/en/2022/12/04/sdf%E7%BC%96%E8%AF%91/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/sdf%E7%BC%96%E8%AF%91/</guid>
-      
-        <description>&lt;p&gt;[[在vcs 中使用sdf 功能]]&lt;/p&gt;
-&lt;p&gt;[[使用系统任务 sdf_annotate]]&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>VCS命令</title>
-      <link>https://gageluna.com/en/2022/12/04/vcs%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/vcs%E5%91%BD%E4%BB%A4/</guid>
-      
-        <description>&lt;h2 id=&#34;常用编译选项&#34;&gt;常用编译选项&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;obsidian://open?vault=obsidian-metadata&amp;amp;file=VCS%2Foption%2F%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%BB%E5%8A%A1%20sdf_annotate&#34;&gt;增量编译&lt;/a&gt;
-[优化编译](优化编译 Xkeyopt)
-[[优化编译 Xkeyopt]]
-[[寄存器初始化 initreg]]
-[[-v 和 -y（design cell 和 library cell）]]
-[[sdf编译]]
-[[时序检查]]&lt;/p&gt;
-&lt;h2 id=&#34;遇见过的问题及其方法&#34;&gt;遇见过的问题及其方法&lt;/h2&gt;
-&lt;p&gt;[[解决data和clk不同时到达的问题]]
-[[SDF较大带不动（比如几百个G）]]
-[[网表仿真时x态的问题]]&lt;/p&gt;
-&lt;h2 id=&#34;其他说明&#34;&gt;其他说明&lt;/h2&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Verdi 加载波形</title>
-      <link>https://gageluna.com/en/2022/12/04/verdi-%E5%8A%A0%E8%BD%BD%E6%B3%A2%E5%BD%A2/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/verdi-%E5%8A%A0%E8%BD%BD%E6%B3%A2%E5%BD%A2/</guid>
-      
-        <description>&lt;p&gt;verdi -ssf &amp;lt;fsdb_file&amp;gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To use this command line option, compile your design with -kdb
-and generate FSDB.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Verdi 命令</title>
-      <link>https://gageluna.com/en/2022/12/04/verdi-%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/verdi-%E5%91%BD%E4%BB%A4/</guid>
-      
-        <description>&lt;p&gt;[[Verdi读取编辑库]] ^57a7c4&lt;/p&gt;
-&lt;p&gt;[[Verdi 加载波形]]&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Verdi读取编辑库</title>
-      <link>https://gageluna.com/en/2022/12/04/verdi%E8%AF%BB%E5%8F%96%E7%BC%96%E8%BE%91%E5%BA%93/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/verdi%E8%AF%BB%E5%8F%96%E7%BC%96%E8%BE%91%E5%BA%93/</guid>
-      
-        <description>&lt;p&gt;&lt;code&gt;verdi -simflow -dbdir &amp;lt;path&amp;gt; -top &amp;lt;top_name&amp;gt; &amp;lt;other_verdi_options&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;说明:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;-simflow
-Enables Verdi and its utilities to use the library mapping from
-the synopsys_sim.setup file and also import the design
-from the KDB library paths.&lt;/p&gt;
-&lt;p&gt;-dbdir &amp;lt;path&amp;gt;
-Specifies the path of the library directory when you want to
-i    invoke Verdi from a working directory that is different from the
-VCS working directory.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>优化编译</title>
-      <link>https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</guid>
-      
-        <description>&lt;h3 id=&#34;-xkeyoptrtopt---xkeyopttbopt&#34;&gt;**-Xkeyopt=rtopt / -Xkeyopt=tbopt&lt;/h3&gt;
-&lt;p&gt;可以增强vcs 编译优化&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;原文：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option.
-Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option.
-The optimization applies to UVM factory, resource pool and regular expression operations.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>优化编译 Xkeyopt</title>
-      <link>https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91-xkeyopt/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91-xkeyopt/</guid>
-      
-        <description>&lt;h3 id=&#34;-xkeyoptrtopt---xkeyopttbopt&#34;&gt;**-Xkeyopt=rtopt / -Xkeyopt=tbopt&lt;/h3&gt;
-&lt;p&gt;可以增强vcs 编译优化&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;原文：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option.
-Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option.
-The optimization applies to UVM factory, resource pool and regular expression operations.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>使用系统任务 sdf_annotate</title>
-      <link>https://gageluna.com/en/2022/12/04/%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%BB%E5%8A%A1-sdf_annotate/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%BB%E5%8A%A1-sdf_annotate/</guid>
-      
-        <description>&lt;p&gt;在 TB 里面编写：
-&lt;code&gt; $sdf_annotate (&amp;quot;sdf_file&amp;quot;[, module_instance] [,&amp;quot;sdf_configfile&amp;quot;] ,&amp;quot;sdf_logfile&amp;quot;] [,&amp;quot;mtm_spec&amp;quot;] [,&amp;quot;scale_factors&amp;quot;][,&amp;quot;scale_type&amp;quot;]);&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;各部分解释：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;sdf_file&amp;rdquo;
-Specifies the path to an SDF file.&lt;/p&gt;
-&lt;p&gt;module_instance
-Specifies the scope where back-annotation starts. The default is
-the scope of the module instance that calls $sdf_annotate.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;sdf_configfile&amp;rdquo;
-Specifies the SDF configuration file.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;sdf_logfile&amp;rdquo;
-Gate-Level Simulation Feedback
-Specifies an SDF log file to which VCS sends error messages and
-warnings. By default, VCS displays no more than ten warnings
-and ten error messages about back-annotation and writes no
-more than that in the log file you specify with the -l option.&lt;/p&gt;
-&lt;p&gt;However, if you specify the SDF log file with this argument, the
-SDF log file receives all messages about back-annotation. You
-can also use the +sdfverbose runtime option to enable the
-display of all back-annotation messages.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;mtm_spec&amp;rdquo;
-Specifies which delay values of min:typ:max triplets VCS backannotates. Its possible values are &amp;ldquo;MINIMUM&amp;rdquo;, &amp;ldquo;TYPICAL&amp;rdquo;,  &amp;ldquo;MAXIMUM&amp;rdquo;, or &amp;ldquo;TOOL_CONTROL&amp;rdquo; (default).&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;scale_factors&amp;rdquo;
-Specifies the multiplier for the minimum, typical, and maximum
-components of delay triplets. It is a colon separated string of three
-positive, real numbers &amp;ldquo;1.0:1.0:1.0&amp;rdquo; by default.&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;scale_type&amp;rdquo;
-Specifies the delay value from each triplet in the SDF file for use
-before scaling. Its possible values are &amp;ldquo;FROM_TYPICAL&amp;rdquo;,  &amp;ldquo;FROM_MIMINUM&amp;rdquo;, &amp;ldquo;FROM_MAXIMUM&amp;rdquo;, and &amp;ldquo;FROM_MTM&amp;rdquo; (default).&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>在vcs 中使用sdf 功能</title>
-      <link>https://gageluna.com/en/2022/12/04/%E5%9C%A8vcs-%E4%B8%AD%E4%BD%BF%E7%94%A8sdf-%E5%8A%9F%E8%83%BD/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E5%9C%A8vcs-%E4%B8%AD%E4%BD%BF%E7%94%A8sdf-%E5%8A%9F%E8%83%BD/</guid>
-      
-        <description>&lt;p&gt;#vcs_option&lt;/p&gt;
-&lt;p&gt;编译选项：
-&lt;code&gt;-sdf min | typ | max : instance_name : file.sdf&lt;/code&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>增量编译 incremental complation</title>
-      <link>https://gageluna.com/en/2022/12/04/%E5%A2%9E%E9%87%8F%E7%BC%96%E8%AF%91-incremental-complation/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E5%A2%9E%E9%87%8F%E7%BC%96%E8%AF%91-incremental-complation/</guid>
-      
-        <description>&lt;p&gt;VCS 默认选项&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;原文：
-During compilation/elaboration, VCS builds the design hierarchy.
-By default, when you recompile the design,
-VCS compiles only those design units that have changed since the last compilation/elaboration.
-This is called incremental compilation.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>寄存器初始化</title>
-      <link>https://gageluna.com/en/2022/12/04/%E5%AF%84%E5%AD%98%E5%99%A8%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E5%AF%84%E5%AD%98%E5%99%A8%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
-      
-        <description>&lt;p&gt;在编译阶段使用 +vcs+initreg+random，在仿真阶段使用 +initreg+0/1/random/seed_value&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;原文：
-Initializing Verilog Variables, Registers, and Memories
-in an entire Design
-You can use the +vcs+initreg+random option to initialize all bits
-of Verilog variables and registers defined in sequential UDPs and
-memories including multi-dimensional arrays (MDAs) in your design
-to random value 0 or 1, at time zero. The default random seed is
-used.
-The supported data types are:
-. - reg
-. - bit
-. - integer
-. - int
-. - logic
-.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To enable initialization for an entire design, the
-+vcs+initreg+random option must be specified at compile time
-and one of the following options must be specified at runtime:
-. - +vcs+initreg+0
-. - +vcs+initreg+1
-. - +vcs+initreg+random
-. - +vcs+initreg+seed_value&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>时序检查</title>
-      <link>https://gageluna.com/en/2022/12/04/%E6%97%B6%E5%BA%8F%E6%A3%80%E6%9F%A5/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/2022/12/04/%E6%97%B6%E5%BA%8F%E6%A3%80%E6%9F%A5/</guid>
-      
-        <description>&lt;p&gt;#vcs_option&lt;/p&gt;
-&lt;p&gt;在RTL阶段，通常关闭时序检查，可以提升编译性能&lt;/p&gt;
-&lt;p&gt;+notimingcheck&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Tells VCS to ignore timing check system tasks when it compiles
-your design. This option can moderately improve simulation
-performance. The extent of this improvement depends on the
-number of timing checks that VCS ignores. You can also use this
-option at runtime to disable these timing checks after VCS has
-compiled them into the executable. However, the executable
-simulates faster if you include this option at compile time so that
-the timing checks are not in the executable. If you need the
-delayed versions of the signals in negative timing checks but want
-faster performance, include this option at runtime. The delayed
-versions are not available if you use this option at compile time.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;+no_notifier&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Disables toggling of the notifier register that you specify in some
-timing check system tasks. This option does not disable the
-display of warning messages when VCS finds a timing violation
-that you specified in a timing check.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;+noSpecify&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Disables the specify blocks in the specified module instances.&lt;/p&gt;
-&lt;/blockquote&gt;
+        <description>&lt;p&gt;*最近一件事精启发了我：长久以来我都习惯了安卓蓝牙耳机的切换——先取消当前的配对，再在新设备上建立配对，一直以来都是这样，也从未想过这样有什么不方便的问题。但当我切换到iPhone时，我发现可以不需要这么麻烦，换个设备会自动连接。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;这不禁让我开始思考，我之前为什么会没有关注过这种连接复杂性的问题，不是做不到的无能为力，而是完全没有意识到这是一个问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;究竟是什么影响了我的认知我觉得应该有以下两方面的原因&#34;&gt;究竟是什么影响了我的认知，我觉得应该有以下两方面的原因：&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;首当其冲的，应该是行为。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我们不可能有超过我们行为的认知，我们的思考都是建立在我们行为的基础上去进一步加深。如果在一开始我们就没有类似的行为充当基础，我们就无法有更进一步的认知。&lt;/p&gt;
+&lt;p&gt;就像井底之蛙一样，如果它不选择跳出困住自己的井，它无法去想象世界的美丽与壮阔，它觉得世界只存在于井的这一方天地之中。&lt;/p&gt;
+&lt;p&gt;对我来讲也一样，我从来没有过使用 iPhone连接AirPods的行为，我无法知道还有这么方便快捷的连接方式。我没有合理的渠道去进行尝试或者验证。我只能想象——想象大家都是一样的，长按几秒清除连接，再等新设备连接。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;另外，环境也是一个重要因素。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们所在的环境，其实在一定程度上决定我们会怎么样。它是一种潜移默化的、无形的力量，在不知不觉间改变着我们的认知。&lt;/p&gt;
+&lt;p&gt;井底之蛙的那只蛙，如果周围有其他的青蛙，在不断着向上蹦，或者有上去的，在诉说着井外这片世界的美好。那只井底之蛙，也不可能会一直枯坐在井中，没有向上的动力了。&lt;/p&gt;
+&lt;p&gt;我周围的很多人，都是在用着安卓，或者只用iPhone。很少有我能接触到的人，在同时用着iPhone以及其他的IOS设备。我很难从周围的环境中，得到关于IOS全家桶有什么实实在在的优点。&lt;/p&gt;
+&lt;h2 id=&#34;由此及彼我不禁开始反思是否生活中的一些东西也让我会产生类似的问题&#34;&gt;由此及彼，我不禁开始反思，是否生活中的一些东西，也让我会产生类似的问题。&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;我首先想到了我们常说的PUA。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在现代的解释里，PUA已经成为了一种类似于通过心理、情感等方面对某人进行打压或者诈骗的词。在职场中、网络上，经常可以看到如此的词汇：“你被PUA了”。&lt;/p&gt;
+&lt;p&gt;为什么这个词在近几年才开始流行起开？我觉得很大程度上是环境的问题。&lt;/p&gt;
+&lt;p&gt;在这个词出来之前，面对老板的画饼，大部分打工人都会选择默默承受，选择用自己的时间和精力去实现公司做大做强的愿景。即使最后没有老板实现他所说的种种，我们也只能选择接受。&lt;/p&gt;
+&lt;p&gt;随着web2.0的不断发展，自媒体成为了很重要的一个信息沟通渠道，每个人都可以成为了信息发布的源头。人们在互相比对和反思自身的过程中，发现老板的许诺存在着很多的不合理之处。这种时候，我们才会意识到自己被PUA了。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;薪资倒挂现象，其实也是这种认知壁垒的一个体现。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;正是因为对自己所付出的辛劳，以及对自己在社会上价值认识的不足，才会不断出现老员工薪资比新员工还低很多的现象。&lt;/p&gt;
+&lt;p&gt;这正是因为行为决定了我们的认知范围，没有去市场上重新评估自己价值的机会，就无法在和公司的利益谈判之中获得更多的利益。&lt;/p&gt;
+&lt;p&gt;公司要求每个人的薪资保密，其实就是为了加强这种薪资壁垒。老员工没有去这个市场上看自己价值的机会，同时丧失了从其他人得知自己在市场上价值的渠道，不可避免会陷入薪资倒挂的这种情况之中。&lt;/p&gt;
+&lt;h2 id=&#34;在已知我们存在认知壁垒的前提下我们如何去做&#34;&gt;在已知我们存在认知壁垒的前提下，我们如何去做&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;去发现各种新鲜的、未曾认知的事情。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这就要求我们不断的走出自己的舒适区，不断探索自己尚且陌生的环境。在这种状态下，我们不可避免地会遭受挫折，遭遇失败，遇到各种意想不到的突发情况。&lt;/p&gt;
+&lt;p&gt;每当这种时候，我们会想念我们温馨的舒适圈，会产生后退的想法，这很正常。但我们也要相信，正是因为我们的不断尝试，我们才能有各种新的感受、新的想法。&lt;/p&gt;
+&lt;p&gt;我很难说我的种种尝试最后获得了什么成功。&lt;/p&gt;
+&lt;p&gt;但此时此刻，就如同我使用obsidian编写这篇文章一样，这就是一种新的尝试。我在这种尝试过程中，学会了markdown，学会了GitHub pages，简单知道了Hugo的用法，这对我来说就是收获。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;我们无法去改变环境，但我们可以选择适合我们的环境。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;作为一个个体，无论是公司的职员还是小区的住户，其实我们并没有能力去改表我们周围的别人。如果在我们有能力的情况下，我们可以去追求一个更加适合我们，更加激发我们探索能力的地方。&lt;/p&gt;
+&lt;p&gt;当然，我觉得去追求适合我们的环境是一件十分困难的事情，因为无论是从公司离职，还是从小区搬出去，都会需要很大的精力和很强的毅力。同时，新环境是否适应自己也是值得商榷的。&lt;/p&gt;
+&lt;h2 id=&#34;最后我衷心的希望无论你是通过什么方式读到这篇文章请在各种事情上多加自己的思考不断发现新的事情不断打破自己的认知壁垒&#34;&gt;最后，我衷心的希望，无论你是通过什么方式读到这篇文章。请在各种事情上多加自己的思考，不断发现新的事情，不断打破自己的认知壁垒。&lt;/h2&gt;
 </description>
       
     </item>
@@ -414,23 +175,6 @@ that you specified in a timing check.&lt;/p&gt;
       <guid>https://gageluna.com/en/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</guid>
       
         <description>&lt;p&gt;欢迎来到镓锗的博客&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gageluna.com/en/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/1/01/01/</guid>
-      
-        <description>&lt;p&gt;使用预编译选项&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;For example:
-vcs +csdf+precomp+file+test1.sdf&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;***此外，该编译选项有option可以选择存放位置，以及编译后是否删除原sdf文件&lt;/p&gt;
 </description>
       
     </item>

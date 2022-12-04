@@ -8,11 +8,11 @@
     <language>en</language>
     <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>knowledge</title>
-      <link>https://gageluna.com/en/category/knowledge/</link>
+      <title>publish</title>
+      <link>https://gageluna.com/en/category/publish/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://gageluna.com/en/category/knowledge/</guid>
+      <guid>https://gageluna.com/en/category/publish/</guid>
       <description></description>
     </item>
     
@@ -22,15 +22,6 @@
       <pubDate>Tue, 29 Nov 2022 16:01:23 +0800</pubDate>
       
       <guid>https://gageluna.com/en/category/notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>publish</title>
-      <link>https://gageluna.com/en/category/publish/</link>
-      <pubDate>Fri, 25 Nov 2022 16:01:23 +0800</pubDate>
-      
-      <guid>https://gageluna.com/en/category/publish/</guid>
       <description></description>
     </item>
     

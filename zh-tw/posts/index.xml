@@ -8,120 +8,12 @@
     <language>zh-tw</language>
     <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/zh-tw/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>-v 和 -y（design cell 和 library cell）</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/-v-%E5%92%8C-ydesign-cell-%E5%92%8C-library-cell/</link>
+      <title>认知的壁垒</title>
+      <link>https://gageluna.com/zh-tw/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://gageluna.com/zh-tw/2022/12/04/-v-%E5%92%8C-ydesign-cell-%E5%92%8C-library-cell/</guid>
-      <description>-v/-y后面的文件会被vcs识别成library cell。 design cell 的优先级比 library cell优先级高，当例化时，同名design cell和libra</description>
-    </item>
-    
-    <item>
-      <title>sdf编译</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/sdf%E7%BC%96%E8%AF%91/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/sdf%E7%BC%96%E8%AF%91/</guid>
-      <description>[[在vcs 中使用sdf 功能]] [[使用系统任务 sdf_annotate]]</description>
-    </item>
-    
-    <item>
-      <title>VCS命令</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/vcs%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/vcs%E5%91%BD%E4%BB%A4/</guid>
-      <description>常用编译选项 增量编译 [优化编译](优化编译 Xkeyopt) [[优化编译 Xkeyopt]] [[寄存器初始化 initreg]] [[-v 和 -y（design cell 和 library cell）]] [[sdf编译]] [[</description>
-    </item>
-    
-    <item>
-      <title>Verdi 加载波形</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/verdi-%E5%8A%A0%E8%BD%BD%E6%B3%A2%E5%BD%A2/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/verdi-%E5%8A%A0%E8%BD%BD%E6%B3%A2%E5%BD%A2/</guid>
-      <description>verdi -ssf &amp;lt;fsdb_file&amp;gt; To use this command line option, compile your design with -kdb and generate FSDB.</description>
-    </item>
-    
-    <item>
-      <title>Verdi 命令</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/verdi-%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/verdi-%E5%91%BD%E4%BB%A4/</guid>
-      <description>[[Verdi读取编辑库]] ^57a7c4 [[Verdi 加载波形]]</description>
-    </item>
-    
-    <item>
-      <title>Verdi读取编辑库</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/verdi%E8%AF%BB%E5%8F%96%E7%BC%96%E8%BE%91%E5%BA%93/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/verdi%E8%AF%BB%E5%8F%96%E7%BC%96%E8%BE%91%E5%BA%93/</guid>
-      <description>verdi -simflow -dbdir &amp;lt;path&amp;gt; -top &amp;lt;top_name&amp;gt; &amp;lt;other_verdi_options&amp;gt; 说明: -simflow Enables Verdi and its utilities to use the library mapping from the synopsys_sim.setup file and also import the design from the KDB library paths. -dbdir &amp;lt;path&amp;gt; Specifies the path of the library directory when you want to i invoke Verdi from a working directory that is different from the VCS working directory.</description>
-    </item>
-    
-    <item>
-      <title>优化编译</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91/</guid>
-      <description>**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations.</description>
-    </item>
-    
-    <item>
-      <title>优化编译 Xkeyopt</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91-xkeyopt/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E4%BC%98%E5%8C%96%E7%BC%96%E8%AF%91-xkeyopt/</guid>
-      <description>**-Xkeyopt=rtopt / -Xkeyopt=tbopt 可以增强vcs 编译优化 原文： Many runtime performance improvements or optimizations in this release are enabled using the -Xkeyopt=rtopt option. Also, many runtime performance improvements for UVM testbenches are enabled using the -Xkeyopt=tbopt option. The optimization applies to UVM factory, resource pool and regular expression operations.</description>
-    </item>
-    
-    <item>
-      <title>使用系统任务 sdf_annotate</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%BB%E5%8A%A1-sdf_annotate/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E4%BD%BF%E7%94%A8%E7%B3%BB%E7%BB%9F%E4%BB%BB%E5%8A%A1-sdf_annotate/</guid>
-      <description>在 TB 里面编写： $sdf_annotate (&amp;quot;sdf_file&amp;quot;[, module_instance] [,&amp;quot;sdf_configfile&amp;quot;] ,&amp;quot;sdf_logfile&amp;quot;] [,&amp;quot;mtm_spec&amp;quot;] [,&amp;quot;scale_factors&amp;quot;][,&amp;quot;scale_type&amp;quot;]); 各部分解释： &amp;ldquo;sdf_file&amp;rdquo; Specifies the path to an SDF file. module_instance Specifies the scope where back-annotation starts. The default is the scope of the module instance that calls $sdf_annotate. &amp;ldquo;sdf_configfile&amp;rdquo; Specifies the SDF configuration file. &amp;ldquo;sdf_logfile&amp;rdquo; Gate-Level Simulation Feedback Specifies an SDF log file to which VCS sends error messages and warnings.</description>
-    </item>
-    
-    <item>
-      <title>在vcs 中使用sdf 功能</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E5%9C%A8vcs-%E4%B8%AD%E4%BD%BF%E7%94%A8sdf-%E5%8A%9F%E8%83%BD/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E5%9C%A8vcs-%E4%B8%AD%E4%BD%BF%E7%94%A8sdf-%E5%8A%9F%E8%83%BD/</guid>
-      <description>#vcs_option 编译选项： -sdf min | typ | max : instance_name : file.sdf</description>
-    </item>
-    
-    <item>
-      <title>增量编译 incremental complation</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E5%A2%9E%E9%87%8F%E7%BC%96%E8%AF%91-incremental-complation/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E5%A2%9E%E9%87%8F%E7%BC%96%E8%AF%91-incremental-complation/</guid>
-      <description>VCS 默认选项 原文： During compilation/elaboration, VCS builds the design hierarchy. By default, when you recompile the design, VCS compiles only those design units that have changed since the last compilation/elaboration. This is called incremental compilation.</description>
-    </item>
-    
-    <item>
-      <title>寄存器初始化</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E5%AF%84%E5%AD%98%E5%99%A8%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E5%AF%84%E5%AD%98%E5%99%A8%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
-      <description>在编译阶段使用 +vcs+initreg+random，在仿真阶段使用 +initreg+0/1/random/seed_value 原文： Initializing Verilog Variables, Registers, and Memories in an entire Design You can use the +vcs+initreg+random option to initialize all bits of Verilog variables and registers defined in sequential UDPs and memories including</description>
-    </item>
-    
-    <item>
-      <title>时序检查</title>
-      <link>https://gageluna.com/zh-tw/2022/12/04/%E6%97%B6%E5%BA%8F%E6%A3%80%E6%9F%A5/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/2022/12/04/%E6%97%B6%E5%BA%8F%E6%A3%80%E6%9F%A5/</guid>
-      <description>#vcs_option 在RTL阶段，通常关闭时序检查，可以提升编译性能 +notimingcheck Tells VCS to ignore timing check system tasks when it compiles your design. This option can moderately improve simulation performance. The extent of this improvement depends on the number of timing checks that VCS ignores. You can also use this option at runtime to</description>
+      <guid>https://gageluna.com/zh-tw/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</guid>
+      <description>*最近一件事精启发了我：长久以来我都习惯了安卓蓝牙耳机的切换——先取消当前的配对，再在新设备上建立配对，一直以来都是这样，也从未想过这样有什</description>
     </item>
     
     <item>
@@ -167,24 +59,6 @@
       
       <guid>https://gageluna.com/zh-tw/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</guid>
       <description>欢迎来到镓锗的博客</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gageluna.com/zh-tw/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
-      <description>使用预编译选项 For example: vcs +csdf+precomp+file+test1.sdf ***此外，该编译选项有option可以选择存放位置，以及编译后是否删除原sdf文件</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://gageluna.com/zh-tw/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
-      <description>由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分</description>
     </item>
     
   </channel>
