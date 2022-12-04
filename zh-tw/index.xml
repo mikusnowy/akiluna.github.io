@@ -127,5 +127,334 @@
       
     </item>
     
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;&lt;code&gt;alias [&amp;lt;name&amp;gt; &amp;lt;command&amp;gt;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;name&lt;/code&gt;
+This argument specifies the alias name.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;command&lt;/code&gt;
+This argument specifies the alias name for the UCLI command.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;For bit_select, Verilog uses [&amp;lt;index&amp;gt;], while VHDL uses
+(&amp;lt;index&amp;gt;). VCS MX allows both ways to specify index or bit select
+for a Verilog or VHDL object. Note index must be a locally static
+expression.&lt;/p&gt;
+&lt;p&gt;Example :
+vlObj[0], vlObj(0), vhObj(0), vhObj[0]&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;调用verilog或system Verilog 函数(或task)&lt;/p&gt;
+&lt;h2 id=&#34;用法&#34;&gt;用法：&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;call {cmd(...)}&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;必须在编译过程中使用这些option 之一:  -debug_pp, -debug, or -debug_all&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;该命令不会增加仿真时间，因此如果调用有延迟的任务，延迟元素之后的部分将不会实现&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;{ } 最好加上，同时需要注意，$在tcl中仅作为变量使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;h3 id=&#34;command-file-写法&#34;&gt;command file 写法&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;synopsys::alias   alias_name   UCLI_command_name&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;***其中，alias_name 为自定义的名字，UCLI_command_name为原来名字&lt;/p&gt;
+&lt;p&gt;示例：
+&lt;code&gt;synopsys::alias fetch synopsys::get&lt;/code&gt;
+&lt;code&gt;synopsys::alias run_again synopsys::restart&lt;/code&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;h2 id=&#34;常用&#34;&gt;常用：&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;CTRL+A&lt;/code&gt;  返回行首
+&lt;code&gt;CTRL+E&lt;/code&gt;  返回行尾
+&lt;code&gt;CTRL+L&lt;/code&gt;  清空屏幕&lt;/p&gt;
+&lt;h2 id=&#34;原文&#34;&gt;原文：&lt;/h2&gt;
+&lt;p&gt;You can use the up and down arrow keys to access previously
+entered commands in UCLI. You can also edit the command-line
+entries using the &lt;code&gt;&amp;lt;ctrl&amp;gt; -character&lt;/code&gt;.
+• {&lt;code&gt;CTRL+@&lt;/code&gt;, &amp;ldquo;Mark cursor position&amp;rdquo;},
+• {&lt;code&gt;CTRL+A&lt;/code&gt;, &amp;ldquo;Go to beginning of line&amp;rdquo;},
+• {&lt;code&gt;CTRL+B&lt;/code&gt;, &amp;ldquo;Move backward a character&amp;rdquo;},
+• {&lt;code&gt;CTRL+C&lt;/code&gt;, &amp;ldquo;Sends interrupt to the simulator&amp;rdquo;},
+• {&lt;code&gt;CTRL+D&lt;/code&gt;, &amp;ldquo;Delete the character underneath the cursor&amp;rdquo;},
+• {&lt;code&gt;CTRL+E&lt;/code&gt;, &amp;ldquo;Move to the end of the line&amp;rdquo;},
+• {&lt;code&gt;CTRL+F&lt;/code&gt;, &amp;ldquo;Move forward a character&amp;rdquo;},
+• {&lt;code&gt;CTRL+H&lt;/code&gt;, &amp;ldquo;Delete previous character&amp;rdquo;},
+• {&lt;code&gt;CTRL+I&lt;/code&gt;, &amp;ldquo;Automatic completion (tab)&amp;rdquo;},
+• {&lt;code&gt;CTRL+J&lt;/code&gt;, &amp;ldquo;Insert newline&amp;rdquo;},
+• {&lt;code&gt;CTRL+K&lt;/code&gt;, &amp;ldquo;Kill the text from point to the end of the line&amp;rdquo;}
+• {&lt;code&gt;CTRL+L&lt;/code&gt;, &amp;ldquo;Clear the screen, reprinting the current line at the
+top&amp;rdquo;},
+• {&lt;code&gt;CTRL+M&lt;/code&gt;, &amp;ldquo;Insert newline&amp;rdquo;},
+• {&lt;code&gt;CTRL+N&lt;/code&gt;, &amp;ldquo;History next event&amp;rdquo;},
+• {&lt;code&gt;CTRL+O&lt;/code&gt;, &amp;ldquo;Terminal flush&amp;rdquo;},
+• {&lt;code&gt;CTRL+P&lt;/code&gt;, &amp;ldquo;History previous event&amp;rdquo;},
+• {&lt;code&gt;CTRL+R&lt;/code&gt;, &amp;ldquo;Reverse incremental search&amp;rdquo;},
+• {&lt;code&gt;CTRL+T&lt;/code&gt;, &amp;ldquo;Toggle last two characters&amp;rdquo;},
+• {&lt;code&gt;CTRL+U&lt;/code&gt;, &amp;ldquo;Kill the current line&amp;rdquo;},
+• {&lt;code&gt;CTRL+W&lt;/code&gt;, &amp;ldquo;Kill the current line&amp;rdquo;},
+• {&lt;code&gt;CTRL+Y&lt;/code&gt;, &amp;ldquo;Yank the top of the kill ring into the buffer at point&amp;rdquo;},
+• {&lt;code&gt;CTRL+Z&lt;/code&gt;, &amp;ldquo;Terminal suspend&amp;rdquo;},
+• {&lt;code&gt;BACKSPACE&lt;/code&gt;, &amp;ldquo;Delete previous character&amp;rdquo;}&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;==一般会使用ucli -i &amp;lt;filename&amp;gt; ，直接运行TCL脚本==&lt;/p&gt;
+&lt;p&gt;==do命令是指在UCLI操作界面上，使用do &amp;lt;filename&amp;gt; ，运行TCL脚本==&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;用法：&lt;/strong&gt;
+&lt;code&gt;do [-trace [on|off]] [-echo [on|off]] &amp;lt;filename&amp;gt; [&amp;lt;macro parameters&amp;gt;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt;
+&lt;code&gt;-trace [on|off]&lt;/code&gt;
+Tracing is used to display the commands being executed from the macro file.
+默认为关&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-echo [on|off]&lt;/code&gt;
+Displays output of the evaluated command.
+默认为关&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;userguide并未对两者作区分，使用示例为两者同时打开&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;macro parameters&lt;/code&gt;
+主要是为了给模块传递参数的，实际中一般不写。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;==我们常用verdi中的gui界面看driver和load，UCLI的方法，仅作为一种了解==&lt;/p&gt;
+&lt;h2 id=&#34;drivers-驱动&#34;&gt;drivers 驱动&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;drivers &amp;lt;nid&amp;gt; [-full]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-full&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crosses hierarchies to display the drivers of the specified signal.
+By default, only drivers from the local scope are displayed.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;load-负载&#34;&gt;load 负载&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;loads &amp;lt;nid&amp;gt; [-verbose] [-local] [-stopatcell] [-stopatlib] [-nowarn]&lt;/code&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;&lt;strong&gt;dump命令的语法极多，因此这里只记录常用的&lt;/strong&gt;
+根据UCLI userguide所写，该部分内容可以参考《&lt;em&gt;Linking Novas Files with Simulators and Enabling FSDB Dumping User Guide&lt;/em&gt;》&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dump [-file &amp;lt;filename&amp;gt;] [-type VPD|EVCD|FSDB] &lt;/code&gt;
+这两个没有什么好解释的，放在一起写了。如果没有声明，默认时inter.vpd格式
+不过，我们一般会在TCL里写 &lt;code&gt;fsdbDumpfile &amp;lt;filename&amp;gt;.fsdb &lt;/code&gt;，效果相同&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dump -depth &amp;lt;levels&amp;gt; -add &amp;lt;list_of_nids&amp;gt;&lt;/code&gt;
+如果没有，会dump所有信息。如果有，会dump当前层次的指定深度。
+关于depth，0表示全部深度，1表示当前层，2表示当前层和下一层。
+可以结合 -add 选项，增加dump其他层次的波形。
+不过，我们一般会在TCL里写 &lt;code&gt;fsdbDumpvars depth &amp;quot;levels&amp;quot;&lt;/code&gt; (这里的“是必须加的”)，效果相同。&lt;/p&gt;
+&lt;p&gt;==感觉这部分日后会专门去看一下上面提到的那本书，UCLI userguide中关于dump只有dump -option等选项介绍，没有dumpvars等函数的介绍==&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;h2 id=&#34;使用方法&#34;&gt;使用方法：&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;force &amp;lt;nid&amp;gt; &amp;lt;value&amp;gt;
+ [&amp;lt;time&amp;gt; {, &amp;lt;value&amp;gt; &amp;lt;time&amp;gt;}* [-repeat &amp;lt;time&amp;gt;]]
+ [-cancel &amp;lt;time&amp;gt;] [-freeze|-deposit] [-drive]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;**名词解释：
+&lt;code&gt;-freeze&lt;/code&gt; 表明此信号不会被其他功能改写（默认）
+&lt;code&gt;-deposit&lt;/code&gt; force的值可能会被改写
+&lt;code&gt;-cancel &amp;lt;time&amp;gt;&lt;/code&gt;  在一段时间后撤销force这条命令（有些类似于[[release 选项]] ）&lt;/p&gt;
+&lt;h2 id=&#34;限制&#34;&gt;限制：&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;force on entire record is not supported.&lt;/li&gt;
+&lt;li&gt;force on bit or part select is not supported.&lt;/li&gt;
+&lt;li&gt;If you use force on arithmetic operand, then the result is
+&amp;lsquo;X&amp;rsquo;(es).&lt;/li&gt;
+&lt;li&gt;force on ports and variables of procedure and functions is not
+supported.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;备注&#34;&gt;备注：&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;force 的value值，格式需要满足[[verilog numbering convention verilog中数字格式]]&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;h2 id=&#34;基本用法&#34;&gt;基本用法：&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;get &amp;lt;nid&amp;gt; [-radix string]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;nid：信号的层次结构&lt;/p&gt;
+&lt;p&gt;-radix ：显示的格式&lt;/p&gt;
+&lt;h2 id=&#34;原文&#34;&gt;原文：&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;nid&amp;gt;
+Nested hierarchical identifier of the signal, variable, net or reg.&lt;/p&gt;
+&lt;p&gt;-radix &amp;lt;hexadecimal|binary|decimal|octal|symbolic&amp;gt;
+Specifies the radix in which the values of the objects must be
+displayed.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;&lt;code&gt;help [[-text|-info|-full] &amp;lt;cmd&amp;gt;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-info&lt;/code&gt; 和 &lt;code&gt;-full&lt;/code&gt; 显得的比较全面，建议使用这两个option &lt;em&gt;&lt;strong&gt;（非官方建议）&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;使用 -ucli=init，在初始化阶段使用可以调用ucli，不然只能等初始化完成后再调用ucli
+***这里的初始化，主要指的是仿真 0 时刻&lt;/p&gt;
+&lt;p&gt;原文：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can make VCS to enable UCLI debugging when initialization
+begins for static SystemVerilog tasks and functions in module
+definitions by using the -ucli=init runtime option and keyword
+argument.&lt;/p&gt;
+&lt;p&gt;This debugging capability enables you to set breakpoints during
+initialization, among other things.&lt;/p&gt;
+&lt;p&gt;If you omit the -init keyword argument and enter the -ucli
+runtime option, then UCLI begins after initialization and you cannot
+debug inside static initialization routines during initialization.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;p&gt;用法：
+&lt;code&gt;memory -read|-write &amp;lt;nid&amp;gt; -file &amp;lt;fname&amp;gt; [-radix &amp;lt;radix&amp;gt;]  &lt;/code&gt;[-start start_address][-end end_address]`&lt;/p&gt;
+&lt;p&gt;==&lt;strong&gt;注意：该功能只支持Verilog 的memory ！&lt;/strong&gt; ==&lt;/p&gt;
+&lt;p&gt;参数：
+&lt;code&gt;-read &lt;/code&gt;
+从指定file读出文件，写到指定memory位置中&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-write&lt;/code&gt;
+从memory中读出指定的数据，写到file中。类似于Verilog函数 &lt;code&gt;$reamem&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;nid&amp;gt;&lt;/code&gt;
+memory的层次(hierarchy)结构，可以用绝对或者相对路径&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-radix&lt;/code&gt;
+&lt;strong&gt;不支持8位！！！&lt;/strong&gt;
+&lt;code&gt;&amp;lt;radix&amp;gt;&lt;/code&gt;可以支持&lt;code&gt;&amp;lt;hexadecimal | binary | decimal&amp;gt;&lt;/code&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Multiple levels in a path name are separated by the character
+specified in the path separator variable that can be set by the user.&lt;/p&gt;
+&lt;p&gt;Allowed path separators are as follows:
+&amp;ldquo;/&amp;rdquo;
+&amp;ldquo;.&amp;rdquo;
+&amp;ldquo;:&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;.&amp;rdquo; for Verilog naming conventions.
+&amp;ldquo;:&amp;rdquo; for VHDL IEEE 1076-1993 naming conventions.&lt;/p&gt;
+&lt;p&gt;The default for VHDL and MX design is &amp;ldquo;/&amp;rdquo;.
+The default for Verilog design is &amp;ldquo;.&amp;rdquo;.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
   </channel>
 </rss>

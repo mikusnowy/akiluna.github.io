@@ -52,5 +52,148 @@
       <description>欢迎来到镓锗的博客</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>alias [&amp;lt;name&amp;gt; &amp;lt;command&amp;gt;]
+name This argument specifies the alias name.
+command This argument specifies the alias name for the UCLI command.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description> For bit_select, Verilog uses [&amp;lt;index&amp;gt;], while VHDL uses (&amp;lt;index&amp;gt;). VCS MX allows both ways to specify index or bit select for a Verilog or VHDL object. Note index must be a locally static expression.
+Example : vlObj[0], vlObj(0), vhObj(0), vhObj[0]
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>调用verilog或system Verilog 函数(或task) 用法： call {cmd(...)} 注意： 必须在编译过程中使用这些option 之一: -debug_pp, -debug, or -debug_all 该命令不会增加仿真时间</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>command file 写法 synopsys::alias alias_name UCLI_command_name ***其中，alias_name 为自定义的名字，UCLI_command_name为原来名字 示例： synopsys::alias fetch synopsys::get synopsys::alias run_again synopsys::restart</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>常用： CTRL+A 返回行首 CTRL+E 返回行尾 CTRL+L 清空屏幕 原文： You can use the up and down arrow keys to access previously entered commands in UCLI. You can also edit the command-line entries using the &amp;lt;ctrl&amp;gt; -character. • {CTRL+@, &amp;ldquo;Mark cursor position&amp;rdquo;}, • {CTRL+A, &amp;ldquo;Go to beginning of line&amp;rdquo;}, • {CTRL+B, &amp;ldquo;Move backward a character&amp;rdquo;}, • {CTRL+C, &amp;ldquo;Sends interrupt</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>==一般会使用ucli -i &amp;lt;filename&amp;gt; ，直接运行TCL脚本== ==do命令是指在UCLI操作界面上，使用do &amp;lt;filename&amp;gt; ，运行TCL脚本== 用法： do [-trace [on|off]] [-echo [on|off]] &amp;lt;filename&amp;gt; [&amp;lt;macro parameters&amp;gt;]</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>==我们常用verdi中的gui界面看driver和load，UCLI的方法，仅作为一种了解== drivers 驱动 drivers &amp;lt;nid&amp;gt; [-full] -full Crosses hierarchies to display the drivers of the specified signal. By default, only drivers from</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>dump命令的语法极多，因此这里只记录常用的 根据UCLI userguide所写，该部分内容可以参考《Linking Novas Files with Simulators and Enabling FSDB Dumping User Guid</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>使用方法： force &amp;lt;nid&amp;gt; &amp;lt;value&amp;gt; [&amp;lt;time&amp;gt; {, &amp;lt;value&amp;gt; &amp;lt;time&amp;gt;}* [-repeat &amp;lt;time&amp;gt;]] [-cancel &amp;lt;time&amp;gt;] [-freeze|-deposit] [-drive] **名词解释： -freeze 表明此信号不会被其他功能改写（默认） -deposit force的值可能会被改写 -cancel &amp;lt;time&amp;gt; 在一段时间后撤销fo</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>基本用法： get &amp;lt;nid&amp;gt; [-radix string] nid：信号的层次结构 -radix ：显示的格式 原文： &amp;lt;nid&amp;gt; Nested hierarchical identifier of the signal, variable, net or reg. -radix &amp;lt;hexadecimal|binary|decimal|octal|symbolic&amp;gt; Specifies the radix in which the values of the objects must be displayed.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>help [[-text|-info|-full] &amp;lt;cmd&amp;gt;] -info 和 -full 显得的比较全面，建议使用这两个option （非官方建议）</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>使用 -ucli=init，在初始化阶段使用可以调用ucli，不然只能等初始化完成后再调用ucli ***这里的初始化，主要指的是仿真 0 时刻 原文</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>用法： memory -read|-write &amp;lt;nid&amp;gt; -file &amp;lt;fname&amp;gt; [-radix &amp;lt;radix&amp;gt;] [-start start_address][-end end_address]` ==注意：该功能只支持Verilog 的memory ！ == 参数： -read 从指定file读出文件，写到指定memory位置中 -write</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description> Multiple levels in a path name are separated by the character specified in the path separator variable that can be set by the user.
+Allowed path separators are as follows: &amp;ldquo;/&amp;rdquo; &amp;ldquo;.&amp;rdquo; &amp;ldquo;:&amp;rdquo;
+&amp;ldquo;.&amp;rdquo; for Verilog naming conventions. &amp;ldquo;:&amp;rdquo; for VHDL IEEE 1076-1993 naming conventions.
+The default for VHDL and MX design is &amp;ldquo;/&amp;rdquo;. The default for Verilog design is &amp;ldquo;.&amp;rdquo;.
+ </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gageluna.com/zh-tw/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-tw/1/01/01/</guid>
+      <description>onbreak [{commands}] commands Any UCLI command can be specified. Multiple commands should be specified with a semicolon. 注意： 如果只是onbreak，不含其他参数，可以实现断点的效果，会暂停到当前阶段</description>
+    </item>
+    
   </channel>
 </rss>
