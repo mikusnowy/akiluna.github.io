@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title> · shelter</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="用法： senv [element] 如果element 为空，则会列出所有环境参数 环境参数 Name Description activeDomain Language Domain, for example, Verilog activeFile Source file tool is executing activeFrame Active frame being executed. activeLine Line number in the activeFile being executed activescope Active scope activeThread Thread ID in which simulation has stopped file" />
+  <meta name="description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分" />
 
   <meta name="keywords" content="Hugo, theme, den" />
 
@@ -20,19 +20,19 @@
 
 
 <meta property="og:title" content="" />
-<meta property="og:description" content="用法： senv [element] 如果element 为空，则会列出所有环境参数 环境参数 Name Description activeDomain Language Domain, for example, Verilog activeFile Source file tool is executing activeFrame Active frame being executed. activeLine Line number in the activeFile being executed activescope Active scope activeThread Thread ID in which simulation has stopped file" />
+<meta property="og:description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gageluna.com/zh-tw/1/01/01/" /><meta property="article:section" content="posts" />
 
 
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="用法： senv [element] 如果element 为空，则会列出所有环境参数 环境参数 Name Description activeDomain Language Domain, for example, Verilog activeFile Source file tool is executing activeFrame Active frame being executed. activeLine Line number in the activeFile being executed activescope Active scope activeThread Thread ID in which simulation has stopped file">
+<meta itemprop="description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分">
 
-<meta itemprop="wordCount" content="256">
+<meta itemprop="wordCount" content="220">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="用法： senv [element] 如果element 为空，则会列出所有环境参数 环境参数 Name Description activeDomain Language Domain, for example, Verilog activeFile Source file tool is executing activeFrame Active frame being executed. activeLine Line number in the activeFile being executed activescope Active scope activeThread Thread ID in which simulation has stopped file"/>
+<meta name="twitter:description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分"/>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -79,7 +79,7 @@ if (!doNotTrack) {
           <li class="nav-item">
             
               
-                <a class="nav-link" href="https://gageluna.com/zh-tw/category/demos/">展示</a>
+                <a class="nav-link" href="https://gageluna.com/zh-tw/category/publish/">文章</a>
               
             
           </li>
@@ -87,7 +87,7 @@ if (!doNotTrack) {
           <li class="nav-item">
             
               
-                <a class="nav-link" href="https://gageluna.com/zh-tw/category/publish/">文章</a>
+                <a class="nav-link" href="https://gageluna.com/zh-tw/category/knowledge/">知识库</a>
               
             
           </li>
@@ -139,117 +139,24 @@ if (!doNotTrack) {
   <main>
 <div class="container content">
   <article>
-  <h2 id="用法">用法：</h2>
-<p><code>senv [element]</code>
-<em><strong>如果element 为空，则会列出所有环境参数</strong></em></p>
-<h2 id="环境参数">环境参数</h2>
-<table>
-<thead>
-<tr>
-<th><strong>Name</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>activeDomain</td>
-<td>Language Domain, for example, Verilog</td>
-</tr>
-<tr>
-<td>activeFile</td>
-<td>Source file tool is executing</td>
-</tr>
-<tr>
-<td>activeFrame</td>
-<td>Active frame being executed.</td>
-</tr>
-<tr>
-<td>activeLine</td>
-<td>Line number in the activeFile being executed</td>
-</tr>
-<tr>
-<td>activescope</td>
-<td>Active scope</td>
-</tr>
-<tr>
-<td>activeThread</td>
-<td>Thread ID in which simulation has stopped</td>
-</tr>
-<tr>
-<td>file</td>
-<td>File name you are currently navigating</td>
-</tr>
-<tr>
-<td>frame</td>
-<td>Current frame</td>
-</tr>
-<tr>
-<td>fsdbFilename</td>
-<td>Debussy fsdb file name</td>
-</tr>
-<tr>
-<td>hasTB</td>
-<td>If design loaded has testbench constructs, this value is &ldquo;1&rdquo;, else &ldquo;2&rdquo;</td>
-</tr>
-<tr>
-<td>inputFilename</td>
-<td>UCLI input commands file name</td>
-</tr>
-<tr>
-<td>keyFilename</td>
-<td>UCLI commands entered are stored in this file; the default is ucli.key</td>
-</tr>
-<tr>
-<td>line</td>
-<td>Line number in the file you are currently navigating</td>
-</tr>
-<tr>
-<td>logFilename</td>
-<td>Simulation log file name; specified with the -l option</td>
-</tr>
-<tr>
-<td>scope</td>
-<td>Current scope</td>
-</tr>
-<tr>
-<td>state</td>
-<td>State of the tool</td>
-</tr>
-<tr>
-<td>thread</td>
-<td>Current thread ID</td>
-</tr>
-<tr>
-<td>time</td>
-<td>Absolute simulation time</td>
-</tr>
-<tr>
-<td>timePrecision</td>
-<td>Time precision of the tool</td>
-</tr>
-<tr>
-<td>vcdFilename</td>
-<td>VCD file name</td>
-</tr>
-<tr>
-<td>vpdFilename</td>
-<td>VPD file name</td>
-</tr>
-</tbody>
-</table>
-<h2 id="other">other</h2>
-<p>在官方示例中，给了一个很不错的例子，结合puts 命令一起使用：</p>
-<pre tabindex="0"><code>ucli%puts “time=[senv time]”
+  <p>由于RTL阶段对时序呈现
+在网表仿真时，会出现x态。</p>
+<ol>
+<li>
+<p>电源端口是否存在force 信号，VDD/VSS是否赋值。
+模型有带power pin和不带之分，需要和综合的人去沟通，看具体使用哪种仿真模型
+<strong>注意IP中的那些phy，主要是它们带了power pin</strong></p>
+</li>
+<li>
+<p>寄存器初始化
+可以参考 [[寄存器初始化 initreg]] ，可以有效解决部分寄存器在初始化时候没有赋值，导致X态传输问题。</p>
+</li>
+<li>
+<p>顶层端口例化过程
+在有些时候，顶层端口并没有被完全使用，需要注意剩下的端口是否悬空输入x态，导致X态传播</p>
+</li>
+</ol>
 
-Displays:
-time=200 NS
-
-ucli%puts “instance=[senv activeScope], file=[senv 
-activeFile], line=[senv activeLine]”
-
-Displays:
-instance /TB1, file=tb1.vhd, line=91
-</code></pre>
   </article>
 
   

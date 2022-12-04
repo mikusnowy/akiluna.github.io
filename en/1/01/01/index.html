@@ -5,11 +5,7 @@
   <meta charset="utf-8">
   <title> · shelter</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Verilog numbers are expressed in the following style: [ - ] [ size ] [ base ] value
- - Indicates a negative number. This parameter is optional.
-size Specifies the number of bits in the number. This parameter is optional.
-base Specifies the base. Binary: ‘b or ‘B, octal: ‘o or ‘O, decimal: ‘d or ‘D, hex: ‘h or ‘H. This parameter is optional.
-value Specifies digits in the appropriate base with optional underscore separators." />
+  <meta name="description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分" />
 
   <meta name="keywords" content="Hugo, theme, den" />
 
@@ -24,31 +20,19 @@ value Specifies digits in the appropriate base with optional underscore separato
 
 
 <meta property="og:title" content="" />
-<meta property="og:description" content="Verilog numbers are expressed in the following style: [ - ] [ size ] [ base ] value
- - Indicates a negative number. This parameter is optional.
-size Specifies the number of bits in the number. This parameter is optional.
-base Specifies the base. Binary: ‘b or ‘B, octal: ‘o or ‘O, decimal: ‘d or ‘D, hex: ‘h or ‘H. This parameter is optional.
-value Specifies digits in the appropriate base with optional underscore separators." />
+<meta property="og:description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gageluna.com/en/1/01/01/" /><meta property="article:section" content="posts" />
 
 
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Verilog numbers are expressed in the following style: [ - ] [ size ] [ base ] value
- - Indicates a negative number. This parameter is optional.
-size Specifies the number of bits in the number. This parameter is optional.
-base Specifies the base. Binary: ‘b or ‘B, octal: ‘o or ‘O, decimal: ‘d or ‘D, hex: ‘h or ‘H. This parameter is optional.
-value Specifies digits in the appropriate base with optional underscore separators.">
+<meta itemprop="description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分">
 
-<meta itemprop="wordCount" content="94">
+<meta itemprop="wordCount" content="220">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Verilog numbers are expressed in the following style: [ - ] [ size ] [ base ] value
- - Indicates a negative number. This parameter is optional.
-size Specifies the number of bits in the number. This parameter is optional.
-base Specifies the base. Binary: ‘b or ‘B, octal: ‘o or ‘O, decimal: ‘d or ‘D, hex: ‘h or ‘H. This parameter is optional.
-value Specifies digits in the appropriate base with optional underscore separators."/>
+<meta name="twitter:description" content="由于RTL阶段对时序呈现 在网表仿真时，会出现x态。 电源端口是否存在force 信号，VDD/VSS是否赋值。 模型有带power pin和不带之分"/>
 
 <script type="application/javascript">
 var doNotTrack = false;
@@ -147,32 +131,24 @@ if (!doNotTrack) {
   <main>
 <div class="container content">
   <article>
-  <p>Verilog numbers are expressed in the following style:
-<code>[ - ] [ size ] [ base ] value</code></p>
-<blockquote>
-<p>-
-Indicates a negative number. This parameter is optional.</p>
-<p>size
-Specifies the number of bits in the number. This parameter is
-optional.</p>
-<p>base
-Specifies the base. Binary: ‘b or ‘B, octal: ‘o or ‘O, decimal: ‘d or
-‘D, hex: ‘h or ‘H. This parameter is optional.</p>
-<p>value
-Specifies digits in the appropriate base with optional underscore
-separators. The default value is decimal. This parameter is mandatory</p>
-</blockquote>
-<pre tabindex="0"><code>Example：
+  <p>由于RTL阶段对时序呈现
+在网表仿真时，会出现x态。</p>
+<ol>
+<li>
+<p>电源端口是否存在force 信号，VDD/VSS是否赋值。
+模型有带power pin和不带之分，需要和综合的人去沟通，看具体使用哪种仿真模型
+<strong>注意IP中的那些phy，主要是它们带了power pin</strong></p>
+</li>
+<li>
+<p>寄存器初始化
+可以参考 [[寄存器初始化 initreg]] ，可以有效解决部分寄存器在初始化时候没有赋值，导致X态传输问题。</p>
+</li>
+<li>
+<p>顶层端口例化过程
+在有些时候，顶层端口并没有被完全使用，需要注意剩下的端口是否悬空输入x态，导致X态传播</p>
+</li>
+</ol>
 
-’b11111110 
-8’b11111110
-’Hffca23 
-21’H1fca23
--23749 
-27_195_000 
-16&#39;b0011_0101_0001_1111 
-32&#39;h 12ab_f001
-</code></pre>
   </article>
 
   
