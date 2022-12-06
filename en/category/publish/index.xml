@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>publish on shelter</title>
-    <link>gageluna.com/en/category/publish/</link>
+    <link>https://gageluna.com/en/category/publish/</link>
     <description>Recent content in publish on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="gageluna.com/en/category/publish/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/category/publish/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>认知的壁垒</title>
-      <link>gageluna.com/en/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</link>
+      <link>https://gageluna.com/en/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>gageluna.com/en/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</guid>
+      <guid>https://gageluna.com/en/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</guid>
       <description>*最近一件事精启发了我：长久以来我都习惯了安卓蓝牙耳机的切换——先取消当前的配对，再在新设备上建立配对，一直以来都是这样，也从未想过这样有什</description>
     </item>
     
     <item>
       <title>测试新分类</title>
-      <link>gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</link>
+      <link>https://gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</link>
       <pubDate>Fri, 25 Nov 2022 16:01:23 +0800</pubDate>
       
-      <guid>gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</guid>
+      <guid>https://gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</guid>
       <description>总归还是需要留个文件在这里作为备用的 该文章只是用来测试</description>
     </item>
     

@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on shelter</title>
-    <link>gageluna.com/en/categories/</link>
+    <link>https://gageluna.com/en/categories/</link>
     <description>Recent content in Categories on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="gageluna.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>publish</title>
-      <link>gageluna.com/en/category/publish/</link>
+      <link>https://gageluna.com/en/category/publish/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>gageluna.com/en/category/publish/</guid>
+      <guid>https://gageluna.com/en/category/publish/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Notes</title>
-      <link>gageluna.com/en/category/notes/</link>
+      <link>https://gageluna.com/en/category/notes/</link>
       <pubDate>Tue, 29 Nov 2022 16:01:23 +0800</pubDate>
       
-      <guid>gageluna.com/en/category/notes/</guid>
+      <guid>https://gageluna.com/en/category/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demos</title>
-      <link>gageluna.com/en/category/demos/</link>
+      <link>https://gageluna.com/en/category/demos/</link>
       <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>gageluna.com/en/category/demos/</guid>
+      <guid>https://gageluna.com/en/category/demos/</guid>
       <description></description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>note on shelter</title>
-    <link>gageluna.com/zh-cn/tag/note/</link>
+    <link>https://gageluna.com/zh-cn/tag/note/</link>
     <description>Recent content in note on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 25 Nov 2022 16:01:23 +0800</lastBuildDate><atom:link href="gageluna.com/zh-cn/tag/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 16:01:23 +0800</lastBuildDate><atom:link href="https://gageluna.com/zh-cn/tag/note/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试新分类</title>
-      <link>gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</link>
+      <link>https://gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</link>
       <pubDate>Fri, 25 Nov 2022 16:01:23 +0800</pubDate>
       
-      <guid>gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</guid>
+      <guid>https://gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</guid>
       <description>总归还是需要留个文件在这里作为备用的 该文章只是用来测试</description>
     </item>
     

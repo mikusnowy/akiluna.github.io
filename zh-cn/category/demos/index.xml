@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Demos on shelter</title>
-    <link>gageluna.com/zh-cn/category/demos/</link>
+    <link>https://gageluna.com/zh-cn/category/demos/</link>
     <description>Recent content in Demos on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="gageluna.com/zh-cn/category/demos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="https://gageluna.com/zh-cn/category/demos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试图片</title>
-      <link>gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</link>
+      <link>https://gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</link>
       <pubDate>Mon, 05 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</guid>
+      <guid>https://gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</guid>
       <description>欢迎来到镓锗的博客</description>
     </item>
     
