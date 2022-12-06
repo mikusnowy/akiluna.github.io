@@ -9,6 +9,20 @@
   </url>
   
   <url>
+    <loc>https://gageluna.com/en/tag/articles/</loc>
+    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/en/category/articles/</loc>
+    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://gageluna.com/en/categories/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,20 +31,6 @@
   
   <url>
     <loc>https://gageluna.com/en/posts/</loc>
-    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/en/tag/publish/</loc>
-    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/en/category/publish/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
