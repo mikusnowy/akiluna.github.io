@@ -1,127 +1,127 @@
-<?xml-stylesheet type="text/xsl" href="https://gageluna.com/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="gageluna.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gageluna.com/zh-cn/about/</loc>
+    <loc>gageluna.com/zh-cn/about/</loc>
     <lastmod>2022-12-02T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/categories/</loc>
+    <loc>gageluna.com/zh-cn/categories/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/posts/</loc>
+    <loc>gageluna.com/zh-cn/posts/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/tag/publish/</loc>
+    <loc>gageluna.com/zh-cn/tag/publish/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/category/publish/</loc>
+    <loc>gageluna.com/zh-cn/category/publish/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/</loc>
+    <loc>gageluna.com/zh-cn/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/tags/</loc>
+    <loc>gageluna.com/zh-cn/tags/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</loc>
+    <loc>gageluna.com/zh-cn/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/category/notes/</loc>
+    <loc>gageluna.com/zh-cn/category/notes/</loc>
     <lastmod>2022-12-02T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/tag/notes/</loc>
+    <loc>gageluna.com/zh-cn/tag/notes/</loc>
     <lastmod>2022-12-02T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/2022/11/29/%E4%BD%9C%E4%B8%BA%E4%BD%BF%E7%94%A8%E8%80%85%E8%81%8A%E8%81%8Aios-%E5%92%8Candroid/</loc>
+    <loc>gageluna.com/zh-cn/2022/11/29/%E4%BD%9C%E4%B8%BA%E4%BD%BF%E7%94%A8%E8%80%85%E8%81%8A%E8%81%8Aios-%E5%92%8Candroid/</loc>
     <lastmod>2022-11-29T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/2022/11/27/%E8%8A%82%E6%97%A5%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
+    <loc>gageluna.com/zh-cn/2022/11/27/%E8%8A%82%E6%97%A5%E7%9A%84%E6%84%8F%E4%B9%89/</loc>
     <lastmod>2022-11-27T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/tag/note/</loc>
+    <loc>gageluna.com/zh-cn/tag/note/</loc>
     <lastmod>2022-12-02T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</loc>
+    <loc>gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</loc>
     <lastmod>2022-12-02T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>gageluna.com/zh-cn/2022/11/25/%E6%B5%8B%E8%AF%95%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2022-12-02T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/category/demos/</loc>
+    <loc>gageluna.com/zh-cn/category/demos/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/tag/images/</loc>
+    <loc>gageluna.com/zh-cn/tag/images/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</loc>
+    <loc>gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
