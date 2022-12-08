@@ -91,18 +91,6 @@
       <guid>https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/</guid>
       
         <description>&lt;p&gt;==这里不列举简单基础操作，只列举一些便捷的操作==&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>VIM 命令</title>
-      <link>https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/</guid>
-      
-        <description>&lt;p&gt;==这里不列举简单基础操作，只列举一些便捷的操作==&lt;/p&gt;
 &lt;h2 id=&#34;移动&#34;&gt;移动&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;S-Left&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;C-Left&amp;gt;&lt;/code&gt; 左移一个单词&lt;/li&gt;
@@ -455,6 +443,18 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>VIM 图示</title>
+      <link>https://gageluna.com/zh-cn/2022/12/02/vim-%E5%9B%BE%E7%A4%BA/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-cn/2022/12/02/vim-%E5%9B%BE%E7%A4%BA/</guid>
+      
+        <description>&lt;p&gt;==这里不列举简单基础操作，只列举一些便捷的操作==&lt;/p&gt;
 </description>
       
     </item>
