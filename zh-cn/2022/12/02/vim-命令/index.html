@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta name="generator" content="Hugo 0.96.0" />
+  <meta charset="utf-8">
+  <title>VIM 命令 · shelter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="==这里不列举简单基础操作，只列举一些便捷的操作== 移动 &amp;lt;S-Left&amp;gt; 或 &amp;lt;C-Left&amp;gt; 左移一个单词 &amp;lt;S-Right&amp;gt; 或 &amp;lt;C-Right&amp;gt; 右移一个单词 CTRL-B 或 &amp;lt;Home&amp;gt; 命令行行首 CTRL-E 或 &amp;lt;End&amp;gt; 命令行行尾 使用 gj 和 gk 命令可" />
+
+  <meta name="keywords" content="Hugo, theme, den" />
+
+<link rel="canonical" href="https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://gageluna.com/css/den.css">
+
+
+
+
+<meta property="og:title" content="VIM 命令" />
+<meta property="og:description" content="==这里不列举简单基础操作，只列举一些便捷的操作== 移动 &lt;S-Left&gt; 或 &lt;C-Left&gt; 左移一个单词 &lt;S-Right&gt; 或 &lt;C-Right&gt; 右移一个单词 CTRL-B 或 &lt;Home&gt; 命令行行首 CTRL-E 或 &lt;End&gt; 命令行行尾 使用 gj 和 gk 命令可" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-06T00:00:00+00:00" />
+
+<meta itemprop="name" content="VIM 命令">
+<meta itemprop="description" content="==这里不列举简单基础操作，只列举一些便捷的操作== 移动 &lt;S-Left&gt; 或 &lt;C-Left&gt; 左移一个单词 &lt;S-Right&gt; 或 &lt;C-Right&gt; 右移一个单词 CTRL-B 或 &lt;Home&gt; 命令行行首 CTRL-E 或 &lt;End&gt; 命令行行尾 使用 gj 和 gk 命令可"><meta itemprop="datePublished" content="2022-12-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-12-06T00:00:00+00:00" />
+<meta itemprop="wordCount" content="3280">
+<meta itemprop="keywords" content="note," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VIM 命令"/>
+<meta name="twitter:description" content="==这里不列举简单基础操作，只列举一些便捷的操作== 移动 &lt;S-Left&gt; 或 &lt;C-Left&gt; 左移一个单词 &lt;S-Right&gt; 或 &lt;C-Right&gt; 右移一个单词 CTRL-B 或 &lt;Home&gt; 命令行行首 CTRL-E 或 &lt;End&gt; 命令行行尾 使用 gj 和 gk 命令可"/>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-XXXXXXXX-X', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+<body>
+  
+  <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://gageluna.com/images/background.jpg'); background-position: center; background-size: cover;">
+  <div class="container">
+  <nav class="header-nav navbar navbar-expand-md navbar-dark light-dark">
+    <div class="header-logo navbar-brand">
+      
+        <a class="float-left" href="https://gageluna.com/zh-cn/">
+      
+        
+        <img class="mr20 header-logo-image" src="https://gageluna.com/images/globe.svg" alt="logo">
+        
+        
+          GaGe
+         
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-menu collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://gageluna.com/zh-cn/category/notes/">笔记</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              
+                <a class="nav-link" href="https://gageluna.com/zh-cn/category/articles/">文章</a>
+              
+            
+          </li>
+        
+          <li class="nav-item">
+            
+              <a class="nav-link" href="https://gageluna.com/zh-cn/about/">关于</a>
+            
+          </li>
+        
+        
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://gageluna.com/en/"><i class="fas fa-globe"></i> English</a>
+            </li>
+          
+          
+          
+          
+        
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="container header-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="header-content">
+        <h1 class="header-title">VIM 命令</h1>
+        <p class="header-date">作者：
+          GaGe /
+        
+        2022-12-02
+          / 分类：
+          <a href="https://gageluna.com/zh-cn/category/note/">note</a>
+        </p>
+        
+        <div class="header-underline"></div>
+        
+          <div class="clearfix"></div>
+          <p class="float-right header-tags">
+              <i class="fas fa-tags" aria-hidden="true"></i>
+              <a href="https://gageluna.com/zh-cn/tag/note/">note</a>
+          </p>
+        
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <main>
+<div class="container content">
+  <article>
+  <p>==这里不列举简单基础操作，只列举一些便捷的操作==</p>
+<h2 id="移动">移动</h2>
+<ul>
+<li><code>&lt;S-Left&gt;</code> 或 <code>&lt;C-Left&gt;</code> 左移一个单词</li>
+<li><code>&lt;S-Right&gt;</code> 或 <code>&lt;C-Right&gt;</code> 右移一个单词</li>
+<li><code>CTRL-B</code> 或 <code>&lt;Home&gt;</code> 命令行行首</li>
+<li><code>CTRL-E</code> 或 <code>&lt;End&gt;</code> 命令行行尾</li>
+<li>使用 <code>gj</code> 和 <code>gk</code> 命令可以只移动一个屏幕行（适用于较长的行，有回绕时候）
+<ul>
+<li>可以使用<code>:map &lt;Up&gt; gk</code>，<code> :map &lt;Down&gt; gj</code> 在vimrc中定义</li>
+</ul>
+</li>
+</ul>
+<h2 id="删除">删除</h2>
+<ul>
+<li><code>CTRL-W</code> 删除光标前整个单词</li>
+<li><code>CTRL-U</code>  删除命令行上全部文字</li>
+</ul>
+<h2 id="切换">切换</h2>
+<ul>
+<li>单独文件切换
+<ul>
+<li><code>CTRL-Z</code>退出挂起vim+<code>fg</code>返回vim</li>
+<li><code>:!{command}</code></li>
+<li>使用<code>：mark</code> 查看所有的标记指向何处，用 <code>’0</code> 至<code>’9</code> 切换不同的工作。</li>
+<li>使用<code>：oldfiles</code> 查看最近编辑过的文件，
+<ul>
+<li>使用<code>:e #&lt;2</code>打开第2个文件或者<code>:split #&lt;3</code>分割窗口打开第3个文件</li>
+<li>便捷操作：使用<code>:browse oldfiles</code> 显示所有文件，按q停止，输入数字+&lt;Enter&gt; 进行文件</li>
+</ul>
+</li>
+<li>使用<code>:wviminfo</code> 和<code>:rviminfo</code>保存和还原信息
+<ul>
+<li>example：
+在第一个 Vim 里执行:
+<code>:wviminfo! ~/tmp/viminfo</code>
+而在第二个 Vim 里执行:
+<code>:rviminfo! ~/tmp/viminfo</code></li>
+</ul>
+</li>
+<li>储存session <code>:mksession vimbook.vim</code>
+<ul>
+<li>读取session <code>:source vimbook.vim</code> 或者 <code>vim -S vimbook.vim</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>多文件切换
+<ul>
+<li>使用<code>:edit .</code>打开当前目录，使用<code>&lt;enter&gt;</code>或者<code>&lt;ctrl-o&gt;</code>前进或后退，可以打开对应文件</li>
+<li>光标移动到需要打开的文件上，使用<code>gf</code>打开当前文件中存在的其他文件。
+<ul>
+<li>如果存在路径需要修改的问题，使用<code>:set path+=</code>增加目录。如果没有，vim会以当前目录所在目录为起点，进行搜索（支持绝对路径和相对路径）</li>
+<li>可以使用<code>&lt;ctrl-o&gt;</code>返回</li>
+<li>使用<code>:find &lt;filename&gt;</code>可以实现同样功能，针对于文件中没有想要寻找的文件名称</li>
+<li>如果需要在新窗口打开对应文件，使用<code>&lt;ctrl-w&gt; f</code>
+<ul>
+<li>对应的<code>:find</code>命令使用<code>:sfind</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>多个窗口时候，使用<code>&lt;ctrl-w&gt;</code>进行切换</li>
+</ul>
+</li>
+<li>缓冲区（buffer）
+<ul>
+<li>使用<code>:buffers</code>查看所有的buffer</li>
+<li>使用<code>:buffer 2</code>打开相应的缓冲区</li>
+<li>可以使用<code>:buffer &lt;filename&gt;</code>，用文件名或者部分文件名打开buffer</li>
+<li>使用<code>:sbuffer 3</code>在新窗口打开缓冲区</li>
+<li><code>:bnext</code> 编辑下一个缓冲区</li>
+<li><code>:bprevious</code> 编辑前一个缓冲区</li>
+<li><code>:bfirst</code> 编辑第一个缓冲区</li>
+<li><code>:blast</code> 编辑最后一个缓冲区</li>
+<li>buffer前标志：
+<ul>
+<li>\u 列表外缓冲区 unlisted-buffer 。</li>
+<li>% 当前缓冲区。</li>
+<li># 轮换缓冲区。</li>
+<li>\a 激活缓冲区，缓冲区被加载且显示。</li>
+<li>\h 隐藏缓冲区，缓冲区被加载但不显示。</li>
+<li>= 只读缓冲区。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="窗口">窗口</h2>
+<ul>
+<li>分割<code>:split</code> （默认是竖直分割）
+<ul>
+<li>垂直分割：<code>:vsplit</code></li>
+</ul>
+</li>
+<li>跳转
+<code>CTRL-W h</code> 跳转到左边的窗口
+<code>CTRL-W j</code> 跳转到下面的窗口
+<code>CTRL-W k</code> 跳转到上面的窗口
+<code>CTRL-W l</code> 跳转到右边的窗口
+<code>CTRL-W t</code> 跳转到最顶上的窗口
+<code>CTRL-W b</code> 跳转到最底下的窗口</li>
+</ul>
+<h2 id="编辑">编辑</h2>
+<ul>
+<li>使用<code>CTRL-P</code>，vim会自动执行补全操作
+<ul>
+<li>使用<code>CTRL-P</code>和<code>CTRL-N</code>进行选择。<code>CTRL-N</code> 意为下一个匹配，而 <code>CTRL-P</code> 意为前一个匹配。</li>
+<li>补全匹配和<code>:set ignorecase</code>相关</li>
+<li>补全明确类型的文本
+<ul>
+<li><code>CTRL-X</code> <code>CTRL-F</code> 文件名</li>
+<li><code>CTRL-X</code> <code>CTRL-L</code> 整行</li>
+<li><code>CTRL-X</code> <code>CTRL-D</code> 宏定义 (包括包含文件里的)</li>
+<li><code>CTRL-X</code> <code>CTRL-I</code> 当前文件以及所包含的文件</li>
+<li><code>CTRL-X</code> <code>CTRL-K</code> 字典文件内的单词</li>
+<li><code>CTRL-X</code> <code>CTRL-T</code> 同义词词典文件内的单词</li>
+<li><code>CTRL-X</code> <code>CTRL-]</code> 标签</li>
+<li><code>CTRL-X</code> <code>CTRL-V</code> Vim 命令行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>使用<code>CTRL-A</code>，vim执行重复输入（输入你上次在insert模式下输入的文本）
+<ul>
+<li><code>CTRL-@</code> 命令会完成 <code>CTRL-A</code> 的操作后退出插入模式</li>
+</ul>
+</li>
+<li>使用<code>:iabbrev</code>命令来进行缩写
+<ul>
+<li>example：
+<ul>
+<li><code>:iabbrev ad advertisement</code>只有在输入 ad 时候会被扩展成advertisement，输入add无影响</li>
+<li><code>:iabbrev #b /**************************************** </code>:iabbrev #e <!-- raw HTML omitted -->********************************/`
+<strong>可以作为输入注释的方式</strong></li>
+</ul>
+</li>
+<li><code>：iab</code>等同于<code>:iabbrev</code></li>
+<li>该功能还可用来修正打字错误，把容易打错的字扩展成正确的字</li>
+<li><code>:abbreviate</code>列出所有缩写</li>
+<li><code>:unabbreviate</code>删除缩写
+<ul>
+<li>example：
+<ul>
+<li><code>:unabbreviate @f</code>删除 f 的缩写</li>
+</ul>
+</li>
+<li><code>:abclear</code>删除全部缩写</li>
+</ul>
+</li>
+<li>防止缩写被映射，使用<code>:noreabbrev</code>避免映射
+<ul>
+<li>example：
+<ul>
+<li><code>:noreabbrev @a adder</code>a的映射</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>使用<code>CTRL-O {command}</code>，在插入模式下使用任何普通模式的命令（但只能执行1个）</li>
+<li><code>vimdiff</code> 可以使两个文件互相比较
+<ul>
+<li><code>:dp</code>将把文字从左边拷到右边，从而消除两边的差异。&ldquo;dp&rdquo; 代表 &ldquo;diff put&rdquo;。</li>
+<li><code>:do</code>这把文本从左边拷到右边，从而消除差异。</li>
+</ul>
+</li>
+</ul>
+<h2 id="查找">查找</h2>
+<ul>
+<li><code>:set ignorecase</code> 忽略大小写
+<ul>
+<li><code>:set ic</code>为该命令简写</li>
+<li><code>:set noignorecase</code>为开启大小写</li>
+<li><code>:set ignorecase smartcase</code> 如果你采用的模式里至少有一个大写字母，查找就成了大小写敏感的。</li>
+</ul>
+</li>
+<li><code>/</code> 表示正向查找，<code>？</code> 表示反向查找</li>
+<li>在查找命令中加入<code>/</code>表示偏移
+<ul>
+<li>example
+<ul>
+<li><code>/默认/2</code>，表示找到后使光标越过匹配的模式而前移两行，并停留在该行的行首。</li>
+<li><code>/默认/-1</code>，表示找到后使光标越过匹配的模式而回退两行，并停留在该行的行首。</li>
+</ul>
+</li>
+<li><strong>负数不要和</strong><code>n</code> <strong>一起使用</strong>。
+<ul>
+<li>example：<code>/const/-2</code></li>
+<li>这个命令找到下一个单词 &ldquo;const&rdquo;，然后上移两行。如果你用命令 &ldquo;n&rdquo; 再找，Vim 就从当前位置开始，找到同一个 &ldquo;const&rdquo; 匹配。然后再一次在偏移的作用下，回到开始的地方。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>组成一项的方法就是在它前面加 <code>\(</code>，后面加 <code>\)</code>
+<ul>
+<li>example:<code>/\(ab\)*</code> ,匹配ab这个整体0-n次</li>
+</ul>
+</li>
+<li>要避免匹配空字串，使用 <code>\+</code>。这表示前面一项可以被匹配一次或多次。
+<ul>
+<li>example ： <code>/ab\+</code>，匹配 &ldquo;ab&rdquo;、&ldquo;abb&rdquo;、&ldquo;abbb&rdquo; 等等。它不匹配后面没有跟随 &ldquo;b&rdquo; 的 &ldquo;a&rdquo;。</li>
+</ul>
+</li>
+<li>在一个查找模式中，&ldquo;或&rdquo; 运算符是 &ldquo;<code>\|</code>
+<ul>
+<li>example：<code>/end\(if\|while\|for\)</code>，这个命令匹配 &ldquo;endif&rdquo;、&ldquo;endwhile&rdquo; 和 &ldquo;endfor&rdquo;。</li>
+</ul>
+</li>
+<li>为了避免匹配到一个特定的字符，在字符范围首位使用 <code>^</code> 。这样方括号项 [] 就会匹配任何括号内不包括的字符。
+<ul>
+<li>example: <code>/&quot;[^&quot;]*&quot;</code> ，这个命令匹配 &ldquo;foo&rdquo; 和 &ldquo;3!x&rdquo;，包含双引号在内。</li>
+</ul>
+</li>
+<li>预定义：
+<ul>
+<li><code>\a</code> 字母字符 等同于<code>[a-zA-Z]</code></li>
+<li><code>\d</code> 数位 等同于<code>[0-9]</code></li>
+<li><code>\D</code> 非数位 <code>[^0-9]</code></li>
+<li><code>\D</code> 非数位 <code>[^0-9]</code></li>
+<li><code>\x</code> 十六进制数位 <code>[0-9a-fA-F]</code></li>
+<li><code>\X</code>非十六进制数位 <code>[^0-9a-fA-F]</code></li>
+<li><code>\s</code>空白字符 <code>[ ]</code> (&lt;Tab&gt; 和 &lt;Space&gt;)</li>
+<li><code>\S</code> 非空白字符 <code>[^ ]</code> (非 &lt;Tab&gt; 和 &lt;Space&gt;)</li>
+<li><code>\l</code> 小写字母 <code>[a-z]</code></li>
+<li><code>\L</code> 非小写字母 <code>[^a-z]</code></li>
+<li><code>\u</code> 大写字母 <code>[A-Z]</code></li>
+<li><code>\U</code> 非大写字母 <code>[^A-Z]</code></li>
+<li><code>\_</code> 匹配一个换行符
+<ul>
+<li><code>\_.</code> 匹配任意字符或一个换行符。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="折叠">折叠</h2>
+<ul>
+<li><code>zf</code> F-old creation (创建折叠)</li>
+<li><code>zo</code> O-pen a fold (打开折叠)</li>
+<li><code>zc</code> C-lose a fold (关闭折叠)</li>
+<li><code>:mkview</code> 保存折叠</li>
+<li><code>:loadview</code> 恢复折叠</li>
+<li>可以根据 缩进、表达式、语法、标志进行折叠，具体参考UG</li>
+</ul>
+<h2 id="脚本">脚本</h2>
+<ul>
+<li></li>
+<li><code>let {变量} = {表达式}</code> ，给变量赋值，此时为全局变量
+<ul>
+<li>使用<code>let s:{变量} = {表达式}</code>，将变量定义为局部变量</li>
+<li><code>unlet</code> 删除变量</li>
+<li>如果你想在这样的字符串内使用双引号，在之前加上反斜杠即可
+<ul>
+<li>example：<code>let name = &quot;\&quot;peter\&quot;&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>条件语句，支持 if - else if - else 结构
+<ul>
+<li>在比较时候出现大小写比较时，。&quot;<code>#</code>&rdquo; 表示大小写敏感；&quot;<code>?</code>&quot; 表示忽略大小写。
+<ul>
+<li><code>==?</code> 比较两字符串是否相等，不计大小写。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>:if {condition}
+{statements}
+:else
+{statements}
+:endif
+</code></pre><ul>
+<li>循环语句（while）
+<ul>
+<li><code>:continue</code> 跳回 while 循环的开始；继续循环</li>
+<li><code>:break</code> 跳至 <code>&quot;:endwhile</code>&quot;；循环结束</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>:while {条件}
+: {语句}
+:endwhile
+</code></pre><ul>
+<li>循环语句（for）
+<ul>
+<li>可以配合<code>range()</code>函数一起使用，listexpression处添加range函数</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>:for {varname} in {listexpression}
+: {commands}
+:endfor
+</code></pre><ul>
+<li>&ldquo;<code>:execute</code>&rdquo; 命令可以执行一个表达式的结果。</li>
+<li>vim 函数（只列举会用到的）
+<ul>
+<li><code>get()</code> 得到项目，错误索引不报错</li>
+<li><code>len()</code> 列表的项目总数</li>
+<li><code>insert()</code> 在列表某处插入项目</li>
+<li><code>add()</code> 在列表后附加项目</li>
+<li><code>sort()</code> 给列表排序</li>
+<li><code>repeat()</code> 重复列表多次</li>
+<li><code>count()</code> 计算字典里某值的出现次数</li>
+<li><code>line()</code> 光标或位置标记所在行</li>
+<li><code>search()</code> 查找模式的匹配</li>
+<li><code>mkdir()</code> 建立新目录</li>
+<li><code>delete()</code> 删除文件</li>
+<li><code>rename()</code> 重命名文件</li>
+<li><code>system()</code> 得到字符串形式的外壳命令结果</li>
+<li><code>getenv()</code> 得到一个环境变量</li>
+<li><code>setenv()</code> 设置一个环境变量</li>
+</ul>
+</li>
+<li>自定义函数
+<ul>
+<li>如果要重定义一个已经存在的函数，在 &ldquo;function&rdquo; 命令后加上 !
+<ul>
+<li>example：<code>:function! Min(num1, num2, num3)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>:function {name}({var1}, {var2}, ...)
+: {body}
+:endfunction
+</code></pre><ul>
+<li><input disabled="" type="checkbox"> &ldquo;<code>:function</code>&rdquo; 命令列出所有用户自定义的函数及其参数
+<ul>
+<li>如果要查看该函数具体做什么，用该函数名作为 &ldquo;<code>:function</code>&rdquo; 命令的参数即可</li>
+</ul>
+</li>
+<li><code>:delfunction</code>删除函数</li>
+<li>双引号字符 <code>&quot;</code> 标记注释的开始</li>
+<li>部分命令对于空格十分敏感，如无需要，不要设置空格</li>
+</ul>
+<h2 id="插件">插件</h2>
+<ul>
+<li>[[目前使用的按键映射表]]</li>
+</ul>
+<h2 id="不常用但有趣的option">不常用但有趣的option</h2>
+<ul>
+<li>加密：使用<code>vim -x &lt;filename&gt;</code>
+<ul>
+<li>或者使用<code>set key=</code>，但是key会显示在屏幕上，不建议这么使用</li>
+</ul>
+</li>
+<li>打开二进制文件<code>vim -b datafile</code>
+<ul>
+<li>对于部分不可显示的字符，使用<code>:set display=uhex</code>或<code>:%!xxd</code></li>
+</ul>
+</li>
+<li>[[ctrl-o 作用]]</li>
+</ul>
+
+  </article>
+
+  
+  
+    
+    
+    
+  
+  
+<div class="disqus-comment">
+<div>
+<div class="comment-underline"></div>
+</div>
+<div class="btn btn-secondary disqus-button" id="load_disqus" onclick="load_disqus()">
+  载入 Disqus 评论
+</div>
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = "https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/";
+  };
+  function load_disqus() {
+    
+    
+    if (window.location.hostname === 'localhost') return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'gage';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.setAttribute('data-timestamp', +new Date());
+    (document.head || document.body).appendChild(dsq);
+
+    $('#load_disqus').remove();
+  };
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+</div>
+
+
+</div>
+
+  </main><div class="footer gradient-2">
+  <div class="container footer-container ">
+    <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        <div class="footer-title">网站地图</div>
+        <ul class="list-unstyled">
+            
+              
+                <li><a href="https://gageluna.com/zh-cn/tags/">标签</a></li>
+              
+              
+                <li><a href="https://gageluna.com/zh-cn/categories/">分类</a></li>
+              
+            
+            
+            
+            <li><a rel="alternate" type="application/rss&#43;xml" href="https://gageluna.com/zh-cn/index.xml"><i class="fas fa-rss-square"></i> RSS订阅</a></li>
+            
+            
+            
+        </ul>
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title">社群</div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://github.com/shaform/hugo-theme-den/" rel="noopener" target="_blank">GitHub</a></li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+        
+        <div class="footer-title">友链</div>
+        <ul class="list-unstyled">
+          
+          <li><a href="https://github.com/shaform/hugo-theme-den/" rel="noopener" target="_blank">关于我</a></li>
+          
+        </ul>
+        
+      </div> 
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <p class="pull-right text-right">
+          <small><em>Proudly powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a></em></small><br/>
+          <small><em>Theme - <a href="https://github.com/shaform/hugo-theme-den" rel="noopener" target="_blank">Den</a></em></small><br/>
+          <small>
+            &copy; 
+            GaGe
+            
+              2022- -
+            2022
+          </small>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

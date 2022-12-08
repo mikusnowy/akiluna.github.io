@@ -24,28 +24,28 @@
   
   <url>
     <loc>https://gageluna.com/zh-cn/categories/</loc>
-    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/zh-cn/posts/</loc>
-    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/zh-cn/</loc>
-    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/zh-cn/tags/</loc>
-    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -53,6 +53,27 @@
   <url>
     <loc>https://gageluna.com/zh-cn/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</loc>
     <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/zh-cn/tag/note/</loc>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/zh-cn/category/note/</loc>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/zh-cn/2022/12/02/vim-%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2022-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -116,24 +137,6 @@
   <url>
     <loc>https://gageluna.com/zh-cn/2018/03/05/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/tag/note/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/category/note/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/1/01/01/vim-%E5%91%BD%E4%BB%A4/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
