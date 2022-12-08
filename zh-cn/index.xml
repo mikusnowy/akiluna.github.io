@@ -421,7 +421,7 @@
 : {body}
 :endfunction
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &amp;ldquo;&lt;code&gt;:function&lt;/code&gt;&amp;rdquo; 命令列出所有用户自定义的函数及其参数
+&lt;li&gt;&amp;ldquo;&lt;code&gt;:function&lt;/code&gt;&amp;rdquo; 命令列出所有用户自定义的函数及其参数
 &lt;ul&gt;
 &lt;li&gt;如果要查看该函数具体做什么，用该函数名作为 &amp;ldquo;&lt;code&gt;:function&lt;/code&gt;&amp;rdquo; 命令的参数即可&lt;/li&gt;
 &lt;/ul&gt;
@@ -429,10 +429,6 @@
 &lt;li&gt;&lt;code&gt;:delfunction&lt;/code&gt;删除函数&lt;/li&gt;
 &lt;li&gt;双引号字符 &lt;code&gt;&amp;quot;&lt;/code&gt; 标记注释的开始&lt;/li&gt;
 &lt;li&gt;部分命令对于空格十分敏感，如无需要，不要设置空格&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;插件&#34;&gt;插件&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[[目前使用的按键映射表]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;不常用但有趣的option&#34;&gt;不常用但有趣的option&lt;/h2&gt;
 &lt;ul&gt;
@@ -446,7 +442,6 @@
 &lt;li&gt;对于部分不可显示的字符，使用&lt;code&gt;:set display=uhex&lt;/code&gt;或&lt;code&gt;:%!xxd&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;[[ctrl-o 作用]]&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       
