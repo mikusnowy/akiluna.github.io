@@ -182,5 +182,374 @@
       
     </item>
     
+    <item>
+      <title>VIM 命令</title>
+      <link>https://gageluna.com/zh-cn/1/01/01/vim-%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-cn/1/01/01/vim-%E5%91%BD%E4%BB%A4/</guid>
+      
+        <description>&lt;p&gt;==这里不列举简单基础操作，只列举一些便捷的操作==&lt;/p&gt;
+&lt;h2 id=&#34;移动&#34;&gt;移动&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;S-Left&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;C-Left&amp;gt;&lt;/code&gt; 左移一个单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;S-Right&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;C-Right&amp;gt;&lt;/code&gt; 右移一个单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-B&lt;/code&gt; 或 &lt;code&gt;&amp;lt;Home&amp;gt;&lt;/code&gt; 命令行行首&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-E&lt;/code&gt; 或 &lt;code&gt;&amp;lt;End&amp;gt;&lt;/code&gt; 命令行行尾&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;gj&lt;/code&gt; 和 &lt;code&gt;gk&lt;/code&gt; 命令可以只移动一个屏幕行（适用于较长的行，有回绕时候）
+&lt;ul&gt;
+&lt;li&gt;可以使用&lt;code&gt;:map &amp;lt;Up&amp;gt; gk&lt;/code&gt;，&lt;code&gt; :map &amp;lt;Down&amp;gt; gj&lt;/code&gt; 在vimrc中定义&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;删除&#34;&gt;删除&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL-W&lt;/code&gt; 删除光标前整个单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-U&lt;/code&gt;  删除命令行上全部文字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;切换&#34;&gt;切换&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;单独文件切换
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL-Z&lt;/code&gt;退出挂起vim+&lt;code&gt;fg&lt;/code&gt;返回vim&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:!{command}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;：mark&lt;/code&gt; 查看所有的标记指向何处，用 &lt;code&gt;’0&lt;/code&gt; 至&lt;code&gt;’9&lt;/code&gt; 切换不同的工作。&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;：oldfiles&lt;/code&gt; 查看最近编辑过的文件，
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;:e #&amp;lt;2&lt;/code&gt;打开第2个文件或者&lt;code&gt;:split #&amp;lt;3&lt;/code&gt;分割窗口打开第3个文件&lt;/li&gt;
+&lt;li&gt;便捷操作：使用&lt;code&gt;:browse oldfiles&lt;/code&gt; 显示所有文件，按q停止，输入数字+&amp;lt;Enter&amp;gt; 进行文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;:wviminfo&lt;/code&gt; 和&lt;code&gt;:rviminfo&lt;/code&gt;保存和还原信息
+&lt;ul&gt;
+&lt;li&gt;example：
+在第一个 Vim 里执行:
+&lt;code&gt;:wviminfo! ~/tmp/viminfo&lt;/code&gt;
+而在第二个 Vim 里执行:
+&lt;code&gt;:rviminfo! ~/tmp/viminfo&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;储存session &lt;code&gt;:mksession vimbook.vim&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;读取session &lt;code&gt;:source vimbook.vim&lt;/code&gt; 或者 &lt;code&gt;vim -S vimbook.vim&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;多文件切换
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;:edit .&lt;/code&gt;打开当前目录，使用&lt;code&gt;&amp;lt;enter&amp;gt;&lt;/code&gt;或者&lt;code&gt;&amp;lt;ctrl-o&amp;gt;&lt;/code&gt;前进或后退，可以打开对应文件&lt;/li&gt;
+&lt;li&gt;光标移动到需要打开的文件上，使用&lt;code&gt;gf&lt;/code&gt;打开当前文件中存在的其他文件。
+&lt;ul&gt;
+&lt;li&gt;如果存在路径需要修改的问题，使用&lt;code&gt;:set path+=&lt;/code&gt;增加目录。如果没有，vim会以当前目录所在目录为起点，进行搜索（支持绝对路径和相对路径）&lt;/li&gt;
+&lt;li&gt;可以使用&lt;code&gt;&amp;lt;ctrl-o&amp;gt;&lt;/code&gt;返回&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;:find &amp;lt;filename&amp;gt;&lt;/code&gt;可以实现同样功能，针对于文件中没有想要寻找的文件名称&lt;/li&gt;
+&lt;li&gt;如果需要在新窗口打开对应文件，使用&lt;code&gt;&amp;lt;ctrl-w&amp;gt; f&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;对应的&lt;code&gt;:find&lt;/code&gt;命令使用&lt;code&gt;:sfind&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;多个窗口时候，使用&lt;code&gt;&amp;lt;ctrl-w&amp;gt;&lt;/code&gt;进行切换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缓冲区（buffer）
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;:buffers&lt;/code&gt;查看所有的buffer&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;:buffer 2&lt;/code&gt;打开相应的缓冲区&lt;/li&gt;
+&lt;li&gt;可以使用&lt;code&gt;:buffer &amp;lt;filename&amp;gt;&lt;/code&gt;，用文件名或者部分文件名打开buffer&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;:sbuffer 3&lt;/code&gt;在新窗口打开缓冲区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bnext&lt;/code&gt; 编辑下一个缓冲区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bprevious&lt;/code&gt; 编辑前一个缓冲区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:bfirst&lt;/code&gt; 编辑第一个缓冲区&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:blast&lt;/code&gt; 编辑最后一个缓冲区&lt;/li&gt;
+&lt;li&gt;buffer前标志：
+&lt;ul&gt;
+&lt;li&gt;\u 列表外缓冲区 unlisted-buffer 。&lt;/li&gt;
+&lt;li&gt;% 当前缓冲区。&lt;/li&gt;
+&lt;li&gt;# 轮换缓冲区。&lt;/li&gt;
+&lt;li&gt;\a 激活缓冲区，缓冲区被加载且显示。&lt;/li&gt;
+&lt;li&gt;\h 隐藏缓冲区，缓冲区被加载但不显示。&lt;/li&gt;
+&lt;li&gt;= 只读缓冲区。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;窗口&#34;&gt;窗口&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;分割&lt;code&gt;:split&lt;/code&gt; （默认是竖直分割）
+&lt;ul&gt;
+&lt;li&gt;垂直分割：&lt;code&gt;:vsplit&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;跳转
+&lt;code&gt;CTRL-W h&lt;/code&gt; 跳转到左边的窗口
+&lt;code&gt;CTRL-W j&lt;/code&gt; 跳转到下面的窗口
+&lt;code&gt;CTRL-W k&lt;/code&gt; 跳转到上面的窗口
+&lt;code&gt;CTRL-W l&lt;/code&gt; 跳转到右边的窗口
+&lt;code&gt;CTRL-W t&lt;/code&gt; 跳转到最顶上的窗口
+&lt;code&gt;CTRL-W b&lt;/code&gt; 跳转到最底下的窗口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;编辑&#34;&gt;编辑&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;CTRL-P&lt;/code&gt;，vim会自动执行补全操作
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;CTRL-P&lt;/code&gt;和&lt;code&gt;CTRL-N&lt;/code&gt;进行选择。&lt;code&gt;CTRL-N&lt;/code&gt; 意为下一个匹配，而 &lt;code&gt;CTRL-P&lt;/code&gt; 意为前一个匹配。&lt;/li&gt;
+&lt;li&gt;补全匹配和&lt;code&gt;:set ignorecase&lt;/code&gt;相关&lt;/li&gt;
+&lt;li&gt;补全明确类型的文本
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-F&lt;/code&gt; 文件名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-L&lt;/code&gt; 整行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-D&lt;/code&gt; 宏定义 (包括包含文件里的)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-I&lt;/code&gt; 当前文件以及所包含的文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-K&lt;/code&gt; 字典文件内的单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-T&lt;/code&gt; 同义词词典文件内的单词&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-]&lt;/code&gt; 标签&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CTRL-X&lt;/code&gt; &lt;code&gt;CTRL-V&lt;/code&gt; Vim 命令行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;CTRL-A&lt;/code&gt;，vim执行重复输入（输入你上次在insert模式下输入的文本）
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CTRL-@&lt;/code&gt; 命令会完成 &lt;code&gt;CTRL-A&lt;/code&gt; 的操作后退出插入模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;:iabbrev&lt;/code&gt;命令来进行缩写
+&lt;ul&gt;
+&lt;li&gt;example：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:iabbrev ad advertisement&lt;/code&gt;只有在输入 ad 时候会被扩展成advertisement，输入add无影响&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:iabbrev #b /**************************************** &lt;/code&gt;:iabbrev #e &lt;!-- raw HTML omitted --&gt;********************************/`
+&lt;strong&gt;可以作为输入注释的方式&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;：iab&lt;/code&gt;等同于&lt;code&gt;:iabbrev&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;该功能还可用来修正打字错误，把容易打错的字扩展成正确的字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:abbreviate&lt;/code&gt;列出所有缩写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:unabbreviate&lt;/code&gt;删除缩写
+&lt;ul&gt;
+&lt;li&gt;example：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:unabbreviate @f&lt;/code&gt;删除 f 的缩写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:abclear&lt;/code&gt;删除全部缩写&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;防止缩写被映射，使用&lt;code&gt;:noreabbrev&lt;/code&gt;避免映射
+&lt;ul&gt;
+&lt;li&gt;example：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:noreabbrev @a adder&lt;/code&gt;a的映射&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;CTRL-O {command}&lt;/code&gt;，在插入模式下使用任何普通模式的命令（但只能执行1个）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vimdiff&lt;/code&gt; 可以使两个文件互相比较
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:dp&lt;/code&gt;将把文字从左边拷到右边，从而消除两边的差异。&amp;ldquo;dp&amp;rdquo; 代表 &amp;ldquo;diff put&amp;rdquo;。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:do&lt;/code&gt;这把文本从左边拷到右边，从而消除差异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;查找&#34;&gt;查找&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:set ignorecase&lt;/code&gt; 忽略大小写
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:set ic&lt;/code&gt;为该命令简写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set noignorecase&lt;/code&gt;为开启大小写&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:set ignorecase smartcase&lt;/code&gt; 如果你采用的模式里至少有一个大写字母，查找就成了大小写敏感的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; 表示正向查找，&lt;code&gt;？&lt;/code&gt; 表示反向查找&lt;/li&gt;
+&lt;li&gt;在查找命令中加入&lt;code&gt;/&lt;/code&gt;表示偏移
+&lt;ul&gt;
+&lt;li&gt;example
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/默认/2&lt;/code&gt;，表示找到后使光标越过匹配的模式而前移两行，并停留在该行的行首。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/默认/-1&lt;/code&gt;，表示找到后使光标越过匹配的模式而回退两行，并停留在该行的行首。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;负数不要和&lt;/strong&gt;&lt;code&gt;n&lt;/code&gt; &lt;strong&gt;一起使用&lt;/strong&gt;。
+&lt;ul&gt;
+&lt;li&gt;example：&lt;code&gt;/const/-2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;这个命令找到下一个单词 &amp;ldquo;const&amp;rdquo;，然后上移两行。如果你用命令 &amp;ldquo;n&amp;rdquo; 再找，Vim 就从当前位置开始，找到同一个 &amp;ldquo;const&amp;rdquo; 匹配。然后再一次在偏移的作用下，回到开始的地方。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;组成一项的方法就是在它前面加 &lt;code&gt;\(&lt;/code&gt;，后面加 &lt;code&gt;\)&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;example:&lt;code&gt;/\(ab\)*&lt;/code&gt; ,匹配ab这个整体0-n次&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;要避免匹配空字串，使用 &lt;code&gt;\+&lt;/code&gt;。这表示前面一项可以被匹配一次或多次。
+&lt;ul&gt;
+&lt;li&gt;example ： &lt;code&gt;/ab\+&lt;/code&gt;，匹配 &amp;ldquo;ab&amp;rdquo;、&amp;ldquo;abb&amp;rdquo;、&amp;ldquo;abbb&amp;rdquo; 等等。它不匹配后面没有跟随 &amp;ldquo;b&amp;rdquo; 的 &amp;ldquo;a&amp;rdquo;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;在一个查找模式中，&amp;ldquo;或&amp;rdquo; 运算符是 &amp;ldquo;&lt;code&gt;\|&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;example：&lt;code&gt;/end\(if\|while\|for\)&lt;/code&gt;，这个命令匹配 &amp;ldquo;endif&amp;rdquo;、&amp;ldquo;endwhile&amp;rdquo; 和 &amp;ldquo;endfor&amp;rdquo;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;为了避免匹配到一个特定的字符，在字符范围首位使用 &lt;code&gt;^&lt;/code&gt; 。这样方括号项 [] 就会匹配任何括号内不包括的字符。
+&lt;ul&gt;
+&lt;li&gt;example: &lt;code&gt;/&amp;quot;[^&amp;quot;]*&amp;quot;&lt;/code&gt; ，这个命令匹配 &amp;ldquo;foo&amp;rdquo; 和 &amp;ldquo;3!x&amp;rdquo;，包含双引号在内。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;预定义：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\a&lt;/code&gt; 字母字符 等同于&lt;code&gt;[a-zA-Z]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\d&lt;/code&gt; 数位 等同于&lt;code&gt;[0-9]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\D&lt;/code&gt; 非数位 &lt;code&gt;[^0-9]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\D&lt;/code&gt; 非数位 &lt;code&gt;[^0-9]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\x&lt;/code&gt; 十六进制数位 &lt;code&gt;[0-9a-fA-F]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\X&lt;/code&gt;非十六进制数位 &lt;code&gt;[^0-9a-fA-F]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\s&lt;/code&gt;空白字符 &lt;code&gt;[ ]&lt;/code&gt; (&amp;lt;Tab&amp;gt; 和 &amp;lt;Space&amp;gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\S&lt;/code&gt; 非空白字符 &lt;code&gt;[^ ]&lt;/code&gt; (非 &amp;lt;Tab&amp;gt; 和 &amp;lt;Space&amp;gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\l&lt;/code&gt; 小写字母 &lt;code&gt;[a-z]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\L&lt;/code&gt; 非小写字母 &lt;code&gt;[^a-z]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\u&lt;/code&gt; 大写字母 &lt;code&gt;[A-Z]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\U&lt;/code&gt; 非大写字母 &lt;code&gt;[^A-Z]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\_&lt;/code&gt; 匹配一个换行符
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\_.&lt;/code&gt; 匹配任意字符或一个换行符。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;折叠&#34;&gt;折叠&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zf&lt;/code&gt; F-old creation (创建折叠)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zo&lt;/code&gt; O-pen a fold (打开折叠)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zc&lt;/code&gt; C-lose a fold (关闭折叠)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:mkview&lt;/code&gt; 保存折叠&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:loadview&lt;/code&gt; 恢复折叠&lt;/li&gt;
+&lt;li&gt;可以根据 缩进、表达式、语法、标志进行折叠，具体参考UG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;脚本&#34;&gt;脚本&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;let {变量} = {表达式}&lt;/code&gt; ，给变量赋值，此时为全局变量
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;let s:{变量} = {表达式}&lt;/code&gt;，将变量定义为局部变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unlet&lt;/code&gt; 删除变量&lt;/li&gt;
+&lt;li&gt;如果你想在这样的字符串内使用双引号，在之前加上反斜杠即可
+&lt;ul&gt;
+&lt;li&gt;example：&lt;code&gt;let name = &amp;quot;\&amp;quot;peter\&amp;quot;&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;条件语句，支持 if - else if - else 结构
+&lt;ul&gt;
+&lt;li&gt;在比较时候出现大小写比较时，。&amp;quot;&lt;code&gt;#&lt;/code&gt;&amp;rdquo; 表示大小写敏感；&amp;quot;&lt;code&gt;?&lt;/code&gt;&amp;quot; 表示忽略大小写。
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;==?&lt;/code&gt; 比较两字符串是否相等，不计大小写。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:if {condition}
+{statements}
+:else
+{statements}
+:endif
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;循环语句（while）
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;:continue&lt;/code&gt; 跳回 while 循环的开始；继续循环&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:break&lt;/code&gt; 跳至 &lt;code&gt;&amp;quot;:endwhile&lt;/code&gt;&amp;quot;；循环结束&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:while {条件}
+: {语句}
+:endwhile
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;循环语句（for）
+&lt;ul&gt;
+&lt;li&gt;可以配合&lt;code&gt;range()&lt;/code&gt;函数一起使用，listexpression处添加range函数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:for {varname} in {listexpression}
+: {commands}
+:endfor
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;&lt;code&gt;:execute&lt;/code&gt;&amp;rdquo; 命令可以执行一个表达式的结果。&lt;/li&gt;
+&lt;li&gt;vim 函数（只列举会用到的）
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;get()&lt;/code&gt; 得到项目，错误索引不报错&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;len()&lt;/code&gt; 列表的项目总数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;insert()&lt;/code&gt; 在列表某处插入项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;add()&lt;/code&gt; 在列表后附加项目&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sort()&lt;/code&gt; 给列表排序&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;repeat()&lt;/code&gt; 重复列表多次&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;count()&lt;/code&gt; 计算字典里某值的出现次数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;line()&lt;/code&gt; 光标或位置标记所在行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;search()&lt;/code&gt; 查找模式的匹配&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir()&lt;/code&gt; 建立新目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;delete()&lt;/code&gt; 删除文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rename()&lt;/code&gt; 重命名文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;system()&lt;/code&gt; 得到字符串形式的外壳命令结果&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;getenv()&lt;/code&gt; 得到一个环境变量&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setenv()&lt;/code&gt; 设置一个环境变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自定义函数
+&lt;ul&gt;
+&lt;li&gt;如果要重定义一个已经存在的函数，在 &amp;ldquo;function&amp;rdquo; 命令后加上 !
+&lt;ul&gt;
+&lt;li&gt;example：&lt;code&gt;:function! Min(num1, num2, num3)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;:function {name}({var1}, {var2}, ...)
+: {body}
+:endfunction
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &amp;ldquo;&lt;code&gt;:function&lt;/code&gt;&amp;rdquo; 命令列出所有用户自定义的函数及其参数
+&lt;ul&gt;
+&lt;li&gt;如果要查看该函数具体做什么，用该函数名作为 &amp;ldquo;&lt;code&gt;:function&lt;/code&gt;&amp;rdquo; 命令的参数即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;:delfunction&lt;/code&gt;删除函数&lt;/li&gt;
+&lt;li&gt;双引号字符 &lt;code&gt;&amp;quot;&lt;/code&gt; 标记注释的开始&lt;/li&gt;
+&lt;li&gt;部分命令对于空格十分敏感，如无需要，不要设置空格&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;插件&#34;&gt;插件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[[目前使用的按键映射表]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;不常用但有趣的option&#34;&gt;不常用但有趣的option&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;加密：使用&lt;code&gt;vim -x &amp;lt;filename&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;或者使用&lt;code&gt;set key=&lt;/code&gt;，但是key会显示在屏幕上，不建议这么使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;打开二进制文件&lt;code&gt;vim -b datafile&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;对于部分不可显示的字符，使用&lt;code&gt;:set display=uhex&lt;/code&gt;或&lt;code&gt;:%!xxd&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[[ctrl-o 作用]]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
   </channel>
 </rss>
