@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>about on shelter</title>
+    <link>https://gageluna.com/zh-cn/tag/about/</link>
+    <description>Recent content in about on shelter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/zh-cn/tag/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>https://gageluna.com/zh-cn/about/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-cn/about/</guid>
+      <description>本博客主要是记录博主的一些日常所思所想 也可以说 是在这个审查大环境下 保留一些独立思考的地方 无论你是因为何种原因点进来，我都欢迎 希望我的一些思考</description>
+    </item>
+    
+  </channel>
+</rss>
