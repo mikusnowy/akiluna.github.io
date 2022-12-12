@@ -2,48 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gageluna.com/zh-cn/tag/about/</loc>
-    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/category/about/</loc>
-    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/categories/</loc>
-    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/</loc>
-    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/tags/</loc>
-    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://gageluna.com/zh-cn/about/</loc>
-    <lastmod>2022-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://gageluna.com/zh-cn/tag/article/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -58,7 +16,28 @@
   </url>
   
   <url>
+    <loc>https://gageluna.com/zh-cn/categories/</loc>
+    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://gageluna.com/zh-cn/posts/</loc>
+    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/zh-cn/</loc>
+    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/zh-cn/tags/</loc>
     <lastmod>2022-12-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
