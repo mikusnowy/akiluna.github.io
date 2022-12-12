@@ -6,10 +6,30 @@
     <description>Recent content on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="https://gageluna.com/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于</title>
+      <link>https://gageluna.com/zh-cn/2022/12/12/%E5%85%B3%E4%BA%8E/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-cn/2022/12/12/%E5%85%B3%E4%BA%8E/</guid>
+      
+        <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;本博客主要是记录博主的一些日常所思所想
+也可以说
+是在这个审查大环境下
+保留一些独立思考的地方&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;无论你是因为何种原因点进来，我都欢迎
+希望我的一些思考，可以给你一些新的灵感&lt;/p&gt;
+&lt;p&gt;之前尝试过利用云服务器搭建博客，但是烦人的消息推送、繁琐的审查制度，使我放弃了租服务器实现博客的想法。&lt;/p&gt;
+&lt;p&gt;我想，博客注重的是作者的思考，而不是那些花哨的装饰。简约、实用，是我一贯的风格，也因此，我搭建了目前的这个博客，在这里，与你相见。&lt;/p&gt;
+&lt;p&gt;目前使用的是GitHub pages + Hugo架构搭建而成的，&lt;strong&gt;作为非程序员的我，确实有些许困难。如果你发现有什么问题或者值得改进的地方，请及时联系我。&lt;/strong&gt;&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>对抖音等短视频的一些看法</title>
