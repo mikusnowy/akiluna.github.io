@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interactive on shelter</title>
+    <link>https://gageluna.com/en/tag/interactive/</link>
+    <description>Recent content in interactive on shelter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/tag/interactive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VIM 图示</title>
+      <link>https://gageluna.com/en/2022/12/02/vim-%E5%9B%BE%E7%A4%BA/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/en/2022/12/02/vim-%E5%9B%BE%E7%A4%BA/</guid>
+      <description>==这里不列举简单基础操作，只列举一些便捷的操作==</description>
+    </item>
+    
+  </channel>
+</rss>

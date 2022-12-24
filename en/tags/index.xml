@@ -6,7 +6,25 @@
     <description>Recent content in Tags on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about</title>
+      <link>https://gageluna.com/en/tag/about/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/en/tag/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>article</title>
+      <link>https://gageluna.com/en/tag/article/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/en/tag/article/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Articles</title>
       <link>https://gageluna.com/en/tag/articles/</link>
@@ -17,20 +35,20 @@
     </item>
     
     <item>
-      <title>notes</title>
-      <link>https://gageluna.com/en/tag/notes/</link>
-      <pubDate>Tue, 29 Nov 2022 16:01:23 +0800</pubDate>
+      <title>interactive</title>
+      <link>https://gageluna.com/en/tag/interactive/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://gageluna.com/en/tag/notes/</guid>
+      <guid>https://gageluna.com/en/tag/interactive/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>note</title>
-      <link>https://gageluna.com/en/tag/note/</link>
-      <pubDate>Fri, 25 Nov 2022 16:01:23 +0800</pubDate>
+      <title>notes</title>
+      <link>https://gageluna.com/en/tag/notes/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://gageluna.com/en/tag/note/</guid>
+      <guid>https://gageluna.com/en/tag/notes/</guid>
       <description></description>
     </item>
     
