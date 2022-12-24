@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on shelter</title>
+    <title>articles on shelter</title>
     <link>https://gageluna.com/zh-cn/category/articles/</link>
-    <description>Recent content in Articles on shelter</description>
+    <description>Recent content in articles on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/zh-cn/category/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/zh-cn/category/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>感染新冠康复之后的所思所想</title>
+      <link>https://gageluna.com/zh-cn/2022/12/24/%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0%E5%BA%B7%E5%A4%8D%E4%B9%8B%E5%90%8E%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/zh-cn/2022/12/24/%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0%E5%BA%B7%E5%A4%8D%E4%B9%8B%E5%90%8E%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/</guid>
+      <description>疫情过去了3年，现在终于到了放开的时候，这三年我们究竟守护了什么呢？ 首先，在前期防疫时候，政府的各项政策是值得肯定的。在武汉突发疫情之后，一</description>
+    </item>
+    
     <item>
       <title>认知的壁垒</title>
       <link>https://gageluna.com/zh-cn/2022/12/04/%E8%AE%A4%E7%9F%A5%E7%9A%84%E5%A3%81%E5%9E%92/</link>
