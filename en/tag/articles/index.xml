@@ -6,7 +6,16 @@
     <description>Recent content in articles on shelter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/tag/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gageluna.com/en/tag/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022年度总结</title>
+      <link>https://gageluna.com/en/2023/01/02/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gageluna.com/en/2023/01/02/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <description>不知不觉，又是一年过去了，如果说去年的关键词是工作第一年的迷茫与探索，那么今年就应该是成为社畜后的绝望与无助了吧。 其实我也不想把自己的年度关</description>
+    </item>
+    
     <item>
       <title>感染新冠康复之后的所思所想</title>
       <link>https://gageluna.com/en/2022/12/24/%E6%84%9F%E6%9F%93%E6%96%B0%E5%86%A0%E5%BA%B7%E5%A4%8D%E4%B9%8B%E5%90%8E%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/</link>
@@ -50,15 +59,6 @@
       
       <guid>https://gageluna.com/en/2022/11/25/%E6%B5%8B%E8%AF%95%E6%96%B0%E5%88%86%E7%B1%BB/</guid>
       <description>总归还是需要留个文件在这里作为备用的 该文章只是用来测试</description>
-    </item>
-    
-    <item>
-      <title>2022年度总结</title>
-      <link>https://gageluna.com/en/1/01/01/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://gageluna.com/en/1/01/01/2022%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
-      <description>不知不觉，又是一年过去了，如果说去年的关键词是工作第一年的迷茫与探索，那么今年就应该是成为社畜后的绝望与无助了吧。 其实我也不想把自己的年度关</description>
     </item>
     
   </channel>
