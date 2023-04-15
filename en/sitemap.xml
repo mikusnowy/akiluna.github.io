@@ -10,42 +10,49 @@
   
   <url>
     <loc>https://gageluna.com/en/tag/articles/</loc>
-    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/category/articles/</loc>
-    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/categories/</loc>
-    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/posts/</loc>
-    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/</loc>
-    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://gageluna.com/en/tags/</loc>
-    <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://gageluna.com/en/2023/04/12/%E8%AF%BB%E5%9C%B0%E4%B8%8B%E5%AE%A4%E6%89%8B%E8%AE%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/</loc>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
